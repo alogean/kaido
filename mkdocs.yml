@@ -35,6 +35,7 @@ nav:
   - Learning Science Concepts: learning_science_concepts.md
   - "Cognitive Load Theory": cognitive_load_theory.md
   - "AI in Education , Articles": ai_in_education_articles.md
+  - "Use the Skill": skill.md
 
 markdown_extensions:
   - admonition
@@ -42,6 +43,9 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
