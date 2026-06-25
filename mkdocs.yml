@@ -6,6 +6,8 @@ repo_name: alogean/kaido
 
 theme:
   name: material
+  logo: assets/kaido-mark.svg
+  favicon: assets/favicon.svg
   palette:
     - scheme: default
       primary: teal
@@ -42,3 +44,6 @@ markdown_extensions:
 
 plugins:
   - search
+
+extra_css:
+  - stylesheets/extra.css

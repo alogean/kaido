@@ -1,4 +1,8 @@
-# The Art of Learning with AI
+---
+title: Home
+---
+
+![KaiDO , The Art of Learning with AI](assets/kaido-logo.svg){ .kaido-hero }
 
 A curated, open knowledge base on learning science and the responsible use of AI for learning.
 

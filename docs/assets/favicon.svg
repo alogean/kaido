@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KaiDO">
+  <rect width="64" height="64" rx="12" fill="#F4EFE6"/>
+  <text x="13" y="46" font-family="Futura, 'Century Gothic', 'Trebuchet MS', Avenir, sans-serif" font-size="42" font-weight="700" fill="#1A1A1A">K</text>
+  <circle cx="49" cy="40" r="6" fill="#9E2B25"/>
+</svg>

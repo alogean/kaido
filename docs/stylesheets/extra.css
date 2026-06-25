@@ -1,0 +1,58 @@
+/* KaiDO brand palette */
+:root {
+  --kaido-cream: #F4EFE6;
+  --kaido-ink: #1A1A1A;
+  --kaido-red: #9E2B25;
+}
+
+/* Light scheme , cream page, black header text, red accents */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--kaido-cream);
+  --md-primary-fg-color--light: #FBF8F2;
+  --md-primary-fg-color--dark: #E8E1D4;
+  --md-primary-bg-color: var(--kaido-ink);
+  --md-primary-bg-color--light: rgba(26, 26, 26, 0.7);
+
+  --md-accent-fg-color: var(--kaido-red);
+  --md-default-bg-color: var(--kaido-cream);
+  --md-typeset-a-color: var(--kaido-red);
+
+  --md-footer-bg-color: var(--kaido-ink);
+  --md-footer-bg-color--dark: #111111;
+}
+
+/* Soft separation under the cream header */
+[data-md-color-scheme="default"] .md-header {
+  border-bottom: 1px solid rgba(26, 26, 26, 0.08);
+  box-shadow: none;
+}
+
+/* Search field readable on cream header */
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: rgba(26, 26, 26, 0.06);
+}
+[data-md-color-scheme="default"] .md-search__input::placeholder {
+  color: rgba(26, 26, 26, 0.55);
+}
+
+/* Header logo a touch larger */
+.md-header__button.md-logo img {
+  height: 1.6rem;
+}
+
+/* Dark scheme , keep the red accent, lighten for contrast */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--kaido-ink);
+  --md-primary-bg-color: var(--kaido-cream);
+  --md-accent-fg-color: #C84B43;
+  --md-typeset-a-color: #E08079;
+}
+
+/* Home hero logo */
+.kaido-hero {
+  display: block;
+  margin: 1.5rem auto 2.5rem;
+  max-width: 520px;
+  width: 100%;
+  height: auto;
+}
