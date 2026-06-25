@@ -33,6 +33,7 @@ theme:
 nav:
   - Home: index.md
   - Learning Science Concepts: learning_science_concepts.md
+  - "Cognitive Load Theory": cognitive_load_theory.md
   - "AI in Education , Articles": ai_in_education_articles.md
 
 markdown_extensions:

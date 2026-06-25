@@ -15,6 +15,7 @@ It is deliberately generic and reusable: theory and sources, not product documen
 ## Contents
 
 - [Learning Science Concepts](learning_science_concepts.md) , 15 learning-science concepts (cognitive load, ICAP, self-regulation, formative assessment, and more), mapped to a student/lecturer Domain Map (S1:S7 / T1:T7), with relevance notes for AI learning assistants.
+- [Cognitive Load Theory](cognitive_load_theory.md) , a deep-dive content note on Sweller's theory and germane cognitive load: the three load types, the modern revision, and how AI can either prompt or bypass schema-building.
 - [AI in Education , Articles](ai_in_education_articles.md) , curated bibliography of AI-in-education articles and reports, each with a reliability rating.
 
 ## Conventions

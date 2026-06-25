@@ -9,6 +9,7 @@ A curated, open knowledge base on learning science and the responsible use of AI
 The source markdown lives in [`docs/`](docs/):
 
 - [`docs/learning_science_concepts.md`](docs/learning_science_concepts.md) , 15 learning-science concepts mapped to a student/lecturer Domain Map (S1:S7 / T1:T7), with relevance notes for AI learning assistants.
+- [`docs/cognitive_load_theory.md`](docs/cognitive_load_theory.md) , a deep-dive content note on Cognitive Load Theory and germane cognitive load, with an AI-for-learning angle.
 - [`docs/ai_in_education_articles.md`](docs/ai_in_education_articles.md) , curated bibliography of AI-in-education articles and reports with reliability ratings.
 
 ## Site
