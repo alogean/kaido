@@ -17,6 +17,10 @@ This file does the inverse mapping: it takes each concept, explains it in depth,
 
 ## 2. The Domain Map
 
+![Learning science domain map: the 14 learning-journey domains and the concept that anchors each](assets/domain-map.svg){ .kaido-figure }
+
+*The 14 learning-journey domains (S1:S7 students, T1:T7 lecturers) and the learning-science concept that anchors each. The dashed link marks a shared anchor: Cognitive Load Theory anchors both S2 and T2.*
+
 ### Student journey (S1:S7)
 
 | Domain | Title | What it covers |

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 808" role="img" aria-label="Learning science domain map: student and lecturer journeys with their anchoring concepts" font-family="'Helvetica Neue', Arial, sans-serif">
+  <rect x="1" y="1" width="890" height="806" rx="16" fill="#F4EFE6" stroke="#1A1A1A" stroke-opacity="0.10"/>
+
+  <text x="446" y="48" text-anchor="middle" font-family="Futura, 'Century Gothic', 'Trebuchet MS', sans-serif" font-size="24" font-weight="700" fill="#1A1A1A">Learning Science , Domain Map</text>
+  <text x="446" y="74" text-anchor="middle" font-size="13" fill="#6B645B">14 learning-journey domains and the concept that anchors each</text>
+
+  <text x="230" y="112" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#9E2B25">STUDENT JOURNEY</text>
+  <text x="662" y="112" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#9E2B25">LECTURER JOURNEY</text>
+
+  <!-- shared anchor link: Cognitive Load on S2 and T2 -->
+  <line x1="420" y1="265" x2="472" y2="265" stroke="#9E2B25" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="446" y="259" text-anchor="middle" font-size="9" fill="#9E2B25">shared</text>
+
+  <!-- ===== STUDENT COLUMN ===== -->
+  <g>
+    <rect x="40" y="140" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="58" cy="179" r="5" fill="#9E2B25"/>
+    <text x="76" y="171" font-size="16"><tspan fill="#9E2B25" font-weight="700">S1</tspan><tspan fill="#1A1A1A" font-weight="600">  Orientation &amp; Planning</tspan></text>
+    <text x="76" y="194" font-size="13" fill="#6B645B">Self-Regulation / Goal-Setting (Zimmerman)</text>
+
+    <rect x="40" y="226" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="58" cy="265" r="5" fill="#9E2B25"/>
+    <text x="76" y="257" font-size="16"><tspan fill="#9E2B25" font-weight="700">S2</tspan><tspan fill="#1A1A1A" font-weight="600">  Knowledge Acquisition</tspan></text>
+    <text x="76" y="280" font-size="13" fill="#6B645B">Cognitive Load (Sweller) &#183; Dual Coding (Paivio)</text>
+
+    <rect x="40" y="312" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="58" cy="351" r="5" fill="#9E2B25"/>
+    <text x="76" y="343" font-size="16"><tspan fill="#9E2B25" font-weight="700">S3</tspan><tspan fill="#1A1A1A" font-weight="600">  Active Practice &amp; Skill Building</tspan></text>
+    <text x="76" y="366" font-size="13" fill="#6B645B">ICAP-C &#183; Cognitive Apprenticeship (Collins)</text>
+
+    <rect x="40" y="398" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="58" cy="437" r="5" fill="#9E2B25"/>
+    <text x="76" y="429" font-size="16"><tspan fill="#9E2B25" font-weight="700">S4</tspan><tspan fill="#1A1A1A" font-weight="600">  Collaboration &amp; Peer Learning</tspan></text>
+    <text x="76" y="452" font-size="13" fill="#6B645B">ICAP-I &#183; Social Constructivism (Vygotsky)</text>
+
+    <rect x="40" y="484" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="58" cy="523" r="5" fill="#9E2B25"/>
+    <text x="76" y="515" font-size="16"><tspan fill="#9E2B25" font-weight="700">S5</tspan><tspan fill="#1A1A1A" font-weight="600">  Assessment &amp; Self-Diagnosis</tspan></text>
+    <text x="76" y="538" font-size="13" fill="#6B645B">Formative Assessment (Black &amp; Wiliam)</text>
+
+    <rect x="40" y="570" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="58" cy="609" r="5" fill="#9E2B25"/>
+    <text x="76" y="601" font-size="16"><tspan fill="#9E2B25" font-weight="700">S6</tspan><tspan fill="#1A1A1A" font-weight="600">  Reflection &amp; Metacognition</tspan></text>
+    <text x="76" y="624" font-size="13" fill="#6B645B">Metacognitive Monitoring (Flavell)</text>
+
+    <rect x="40" y="656" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="58" cy="695" r="5" fill="#9E2B25"/>
+    <text x="76" y="687" font-size="16"><tspan fill="#9E2B25" font-weight="700">S7</tspan><tspan fill="#1A1A1A" font-weight="600">  Wellbeing &amp; Motivation</tspan></text>
+    <text x="76" y="710" font-size="13" fill="#6B645B">Self-Determination Theory (Deci &amp; Ryan)</text>
+  </g>
+
+  <!-- ===== LECTURER COLUMN ===== -->
+  <g>
+    <rect x="472" y="140" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="490" cy="179" r="5" fill="#9E2B25"/>
+    <text x="508" y="171" font-size="16"><tspan fill="#9E2B25" font-weight="700">T1</tspan><tspan fill="#1A1A1A" font-weight="600">  Course Design</tspan></text>
+    <text x="508" y="194" font-size="13" fill="#6B645B">Constructive Alignment (Biggs)</text>
+
+    <rect x="472" y="226" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="490" cy="265" r="5" fill="#9E2B25"/>
+    <text x="508" y="257" font-size="16"><tspan fill="#9E2B25" font-weight="700">T2</tspan><tspan fill="#1A1A1A" font-weight="600">  Content Creation &amp; Curation</tspan></text>
+    <text x="508" y="280" font-size="13" fill="#6B645B">Cognitive Load (Sweller)</text>
+
+    <rect x="472" y="312" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="490" cy="351" r="5" fill="#9E2B25"/>
+    <text x="508" y="343" font-size="16"><tspan fill="#9E2B25" font-weight="700">T3</tspan><tspan fill="#1A1A1A" font-weight="600">  In-Class Facilitation</tspan></text>
+    <text x="508" y="366" font-size="13" fill="#6B645B">Active Learning (Freeman et al.)</text>
+
+    <rect x="472" y="398" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="490" cy="437" r="5" fill="#9E2B25"/>
+    <text x="508" y="429" font-size="16"><tspan fill="#9E2B25" font-weight="700">T4</tspan><tspan fill="#1A1A1A" font-weight="600">  Assessment Design</tspan></text>
+    <text x="508" y="452" font-size="13" fill="#6B645B">Five Phases of Assessment</text>
+
+    <rect x="472" y="484" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="490" cy="523" r="5" fill="#9E2B25"/>
+    <text x="508" y="515" font-size="16"><tspan fill="#9E2B25" font-weight="700">T5</tspan><tspan fill="#1A1A1A" font-weight="600">  Grading &amp; Feedback</tspan></text>
+    <text x="508" y="538" font-size="13" fill="#6B645B">Effective Feedback (Hattie &amp; Timperley)</text>
+
+    <rect x="472" y="570" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="490" cy="609" r="5" fill="#9E2B25"/>
+    <text x="508" y="601" font-size="16"><tspan fill="#9E2B25" font-weight="700">T6</tspan><tspan fill="#1A1A1A" font-weight="600">  Course Evaluation &amp; Improvement</tspan></text>
+    <text x="508" y="624" font-size="13" fill="#6B645B">Reflective Practice (Sch&#246;n)</text>
+
+    <rect x="472" y="656" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
+    <circle cx="490" cy="695" r="5" fill="#9E2B25"/>
+    <text x="508" y="687" font-size="16"><tspan fill="#9E2B25" font-weight="700">T7</tspan><tspan fill="#1A1A1A" font-weight="600">  Professional Development</tspan></text>
+    <text x="508" y="710" font-size="13" fill="#6B645B">Communities of Practice (Wenger)</text>
+  </g>
+
+  <text x="446" y="770" text-anchor="middle" font-size="11" fill="#6B645B">Red dot = anchoring concept &#183; ICAP-C Constructive, ICAP-I Interactive (Chi) &#183; dashed link = shared anchor (Cognitive Load)</text>
+</svg>
