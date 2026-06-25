@@ -57,6 +57,16 @@
   border-radius: 12px;
 }
 
+/* Interactive (clickable) SVG embedded via <object> */
+.kaido-map-object {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  aspect-ratio: 892 / 808;
+  border: 0;
+}
+
 /* Home hero logo */
 .kaido-hero {
   display: block;
