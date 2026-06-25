@@ -2,27 +2,28 @@
 
 A curated, open knowledge base on learning science and the responsible use of AI for learning.
 
-## What this is
-
-Kaido collects evidence-based learning-science concepts and vetted sources. The goal is to help anyone who designs learning experiences or AI-assisted learning tools, and to reason clearly about when AI helps learning versus when it short-circuits it.
-
-It is deliberately generic and reusable: theory and sources, not product documentation.
+**Live site:** https://alogean.github.io/kaido/
 
 ## Contents
 
-| File | What it is |
-|---|---|
-| [learning_science_concepts.md](learning_science_concepts.md) | 15 learning-science concepts (cognitive load, ICAP, self-regulation, formative assessment, and more), mapped to a student/lecturer Domain Map (S1:S7 / T1:T7), with relevance notes for AI learning assistants. |
-| [ai_in_education_articles.md](ai_in_education_articles.md) | Curated bibliography of AI-in-education articles and reports, each with a reliability rating. |
+The source markdown lives in [`docs/`](docs/):
+
+- [`docs/learning_science_concepts.md`](docs/learning_science_concepts.md) , 15 learning-science concepts mapped to a student/lecturer Domain Map (S1:S7 / T1:T7), with relevance notes for AI learning assistants.
+- [`docs/ai_in_education_articles.md`](docs/ai_in_education_articles.md) , curated bibliography of AI-in-education articles and reports with reliability ratings.
+
+## Site
+
+Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and published to GitHub Pages by the `Deploy site` GitHub Actions workflow on every push to `main`.
+
+To preview locally:
+
+```bash
+pip install mkdocs-material
+mkdocs serve
+```
 
 ## Conventions
 
 - Plain Markdown.
-- **Source reliability key:** 🟢 primary research / authoritative, 🟠 serious journalism / institutional, 🔴 blog / vendor / low-quality journal (cite with caution or avoid).
+- Source reliability key: 🟢 primary research / authoritative, 🟠 serious journalism / institutional, 🔴 blog / vendor / low-quality journal.
 - No em dash or en dash anywhere: use ":" or "," instead.
-
-## How to use and contribute
-
-- When making a claim, pull from authoritative sources (🟢) first; treat 🔴 items as examples of what not to cite.
-- Add new material under the right reliability tier, with a date and a one-line "why it matters".
-- Pair claims about AI and learning with the underlying mechanism (cognitive load, retrieval, metacognition) rather than opinion alone.

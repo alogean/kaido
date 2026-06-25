@@ -1,0 +1,44 @@
+site_name: The Art of Learning with AI
+site_description: A curated knowledge base on learning science and the responsible use of AI for learning.
+site_url: https://alogean.github.io/kaido/
+repo_url: https://github.com/alogean/kaido
+repo_name: alogean/kaido
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Learning Science Concepts: learning_science_concepts.md
+  - "AI in Education , Articles": ai_in_education_articles.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
