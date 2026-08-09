@@ -1,21 +1,23 @@
 # Chaîne YouTube KaiDO , dossier de lancement
 
-État : préparation. Rien n'est en ligne. Les deux vidéos sont pour l'instant auto-hébergées sur <https://alogean.github.io/kaido/videos/>.
+État : visuels prêts, chaîne pas encore créée. Les deux vidéos sont pour l'instant auto-hébergées sur [https://alogean.github.io/kaido/videos/](https://alogean.github.io/kaido/videos/).
 
 Ce que je ne peux pas faire à ta place : créer la chaîne, l'authentifier, uploader. Tout ce qui suit est prêt à copier-coller.
+
+**Décisions arrêtées :** compte de marque, nom `KaiDO`, avatar monogramme, vidéo courte publique au lancement, vidéo longue **non répertoriée** en attendant l'arbitrage du §7.
 
 ---
 
 ## 1. Décisions à prendre avant de créer quoi que ce soit
 
-| Décision | Recommandation | Pourquoi |
-| --- | --- | --- |
-| Chaîne personnelle ou compte de marque | **Compte de marque** ("Brand Account") | Détachable de ton compte Gmail perso, transférable, plusieurs gestionnaires. Changer après coup est pénible. |
-| Nom | **KaiDO** | Cohérent avec le dépôt et le site. |
-| Handle | `@kaido-learning` ou `@kaidolearning` | `@kaido` est certainement pris. À vérifier au moment de la création. |
-| Langue | Français pour les vidéos, métadonnées bilingues | Les vidéos sont en français. Le site est en anglais. Assume les deux plutôt que de faire semblant. |
-| Visibilité au lancement | **Non répertoriée** pour les deux, puis publique | Tu vérifies l'encodage, les chapitres et les sous-titres avant que quiconque tombe dessus. |
-| Auto-hébergement gardé ? | Oui, au moins un temps | La page `docs/videos.md` marche déjà. Si tu bascules sur YouTube, remplace les balises `<video>` par des iframes et supprime les `.mp4` du dépôt (voir §6). |
+| Décision                               | Recommandation                                           | Pourquoi                                                                                                                                                              |
+| --------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Chaîne personnelle ou compte de marque | **Compte de marque** ("Brand Account")             | Détachable de ton compte Gmail perso, transférable, plusieurs gestionnaires. Changer après coup est pénible.                                                      |
+| Nom                                     | **KaiDO**                                          | Cohérent avec le dépôt et le site.                                                                                                                                 |
+| Handle                                  | `@kaido-learning` ou `@kaidolearning`                | `@kaido` est certainement pris. À vérifier au moment de la création.                                                                                             |
+| Langue                                  | Français pour les vidéos, métadonnées bilingues      | Les vidéos sont en français. Le site est en anglais. Assume les deux plutôt que de faire semblant.                                                                 |
+| Visibilité au lancement                | **Non répertoriée** pour les deux, puis publique | Tu vérifies l'encodage, les chapitres et les sous-titres avant que quiconque tombe dessus.                                                                           |
+| Auto-hébergement gardé ?              | Oui, au moins un temps                                   | La page`docs/videos.md` marche déjà. Si tu bascules sur YouTube, remplace les balises `<video>` par des iframes et supprime les `.mp4` du dépôt (voir §6). |
 
 ---
 
@@ -24,6 +26,7 @@ Ce que je ne peux pas faire à ta place : créer la chaîne, l'authentifier, upl
 **Nom :** KaiDO
 
 **Slogan / description courte (moins de 100 caractères) :**
+
 > L'art d'apprendre avec l'IA. Sciences de l'apprentissage, sans bullshit.
 
 **Description longue (à coller dans "À propos") :**
@@ -46,14 +49,28 @@ Code et contributions : https://github.com/alogean/kaido
 
 **Mots-clés de chaîne :** `IA générative`, `apprentissage`, `sciences cognitives`, `charge cognitive`, `LLM`, `agent IA`, `étudiants`, `enseignement supérieur`, `ChatGPT`, `Claude`
 
-**Avatar :** `docs/assets/kaido-mark.svg`, exporté en PNG 800x800, marque encre `#1A1A1A` sur fond crème `#F4EFE6`.
+**Visuels : faits.** Les PNG sont dans ce dossier, prêts à téléverser. Les sources SVG sont dans `youtube/src/`, modifiables et réexportables.
 
-**Bannière :** 2560x1440, zone sûre centrale 1546x423. Fond crème `#F4EFE6`, logo `docs/assets/kaido-logo.svg` centré en encre, filet rouge `#9E2B25`, baseline "L'art d'apprendre avec l'IA".
+| Fichier                      | Usage                    | Format    | Source                |
+| ---------------------------- | ------------------------ | --------- | --------------------- |
+| `avatar-800.png`             | Photo de profil          | 800x800   | `src/avatar.svg`      |
+| `banner-2560x1440.png`       | Bannière de chaîne       | 2560x1440 | `src/banner.svg`      |
+| `thumb-1-apprendre.png`      | Miniature vidéo longue   | 1280x720  | `src/thumb-1.svg`     |
+| `thumb-2-agent-harnais.png`  | Miniature vidéo courte   | 1280x720  | `src/thumb-2.svg`     |
 
-Commande d'export une fois `librsvg` installé (`brew install librsvg`) :
+**Avatar :** monogramme `K` encre `#1A1A1A` et point rouge `#9E2B25` sur crème `#F4EFE6`. Choisi contre le mot-complet `KaiDO` parce que l'avatar s'affiche en cercle à 48 px : cinq glyphes y deviennent une tache grise, une lettre reste une lettre. Les deux variantes écartées restent dans `src/avatar-alt-*.svg`.
+
+**Bannière :** crème, mot-complet en encre avec `ai` en rouge, filet à point rouge, baseline "L'ART D'APPRENDRE AVEC L'IA". Tout le contenu tient dans la zone sûre centrale 1546x423, donc rien n'est amputé sur mobile.
+
+**Miniatures :** typographiques, pas des captures. Les images extraites du tournage montrent la webcam et la barre d'enregistrement, et un tableau blanc photographié est illisible à 210 px de large dans le fil de recommandations. La 1 rejoue le moment mémorable de la vidéo (« Le ciel est ... » et la distribution de probabilités), la 2 pose l'opposition `AGENT ≠ HARNAIS`.
+
+Réexport après modification d'un SVG (`brew install librsvg` si besoin) :
 
 ```bash
-rsvg-convert -w 800 -h 800 -b '#F4EFE6' docs/assets/kaido-mark.svg -o youtube/avatar-800.png
+rsvg-convert -w 800 -h 800 youtube/src/avatar.svg -o youtube/avatar-800.png
+rsvg-convert -w 2560 -h 1440 youtube/src/banner.svg -o youtube/banner-2560x1440.png
+rsvg-convert -w 1280 -h 720 youtube/src/thumb-1.svg -o youtube/thumb-1-apprendre.png
+rsvg-convert -w 1280 -h 720 youtube/src/thumb-2.svg -o youtube/thumb-2-agent-harnais.png
 ```
 
 ---
@@ -75,6 +92,7 @@ rsvg-convert -w 800 -h 800 -b '#F4EFE6' docs/assets/kaido-mark.svg -o youtube/av
 **Fichier :** `docs/assets/video/apprendre-avec-lia-generative.mp4` (23 min 16 s, 1080p, 47 Mo)
 
 **Titre :**
+
 > Apprendre avec l'IA générative : comment ça marche vraiment (et où ça vous vole l'apprentissage)
 
 **Description :**
@@ -121,6 +139,7 @@ en semaines. Les mécanismes, non.
 **Fichier :** `docs/assets/video/agent-ia-et-harnais.mp4` (4 min 42 s, 1080p, 8 Mo)
 
 **Titre :**
+
 > Agent IA et harnais : la distinction que presque personne ne fait
 
 **Description :**
@@ -153,25 +172,25 @@ Dépôt : https://github.com/alogean/kaido
 
 ## 6. Ce qui manque encore
 
-| Manque | Effet | Coût |
-| --- | --- | --- |
-| ~~Sous-titres~~ | **Fait.** `.srt` français pour les deux vidéos, dans `docs/assets/video/`, à charger tels quels dans YouTube Studio. Transcription locale avec whisper-cpp (large-v3-turbo), corrections limitées aux noms propres. | , |
-| ~~Chapitres vérifiés~~ | **Fait.** Les horodatages ci-dessus sont calés sur la transcription, plus sur un échantillonnage d'images. | , |
-| **Miniatures** | Les captures brutes montrent la webcam et la barre d'enregistrement. Correct, pas bon. | Une heure de design, ou un gabarit crème/encre/rouge réutilisable. |
-| **Bannière et avatar PNG** | À exporter depuis les SVG du dépôt. | 10 minutes. |
-| **Écran de fin, filigrane** | Renvoi vers le site et l'autre vidéo. | À faire après la mise en ligne. |
+| Manque                             | Effet                                                                                                                                                                                                                             | Coût                                                                |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| ~~Sous-titres~~                   | **Fait.** `.srt` français pour les deux vidéos, dans `docs/assets/video/`, à charger tels quels dans YouTube Studio. Transcription locale avec whisper-cpp (large-v3-turbo), corrections limitées aux noms propres. | ,                                                                    |
+| ~~Chapitres vérifiés~~          | **Fait.** Les horodatages ci-dessus sont calés sur la transcription, plus sur un échantillonnage d'images.                                                                                                                | ,                                                                    |
+| ~~Miniatures~~                     | **Fait.** Deux miniatures typographiques 1280x720 dans ce dossier, gabarit crème/encre/rouge réutilisable pour les prochaines vidéos.                                                                                       | ,                                                                    |
+| ~~Bannière et avatar PNG~~        | **Fait.** Exportés depuis `src/`, dans ce dossier.                                                                                                                                                                                | ,                                                                    |
+| **Écran de fin, filigrane** | Renvoi vers le site et l'autre vidéo.                                                                                                                                                                                            | À faire après la mise en ligne.                                    |
 
 ## 7. À arbitrer avant de rendre la vidéo longue publique
 
 La transcription fait apparaître quatre choses qui ne se voient pas au tableau. Aucune n'est
 grave, toutes méritent une décision consciente plutôt qu'une découverte en commentaire.
 
-| Passage | Horodatage | Le problème |
-| --- | --- | --- |
-| "Ce qui serait cool, c'est de faire un monthly call, une date bien précise, chacun vient et dit j'ai essayé ça" | ~07:20 | La vidéo s'adresse à un groupe identifié, pas à un public. Sur une chaîne ouverte, l'invitation devient une promesse à des inconnus. Soit tu la coupes, soit tu l'assumes et tu ouvres vraiment le call. |
-| "Les forces du mal, donc c'est xAI, c'est Elon Musk" | ~15:45 | Une pique. Drôle en interne, moins quand elle est indexée par la recherche YouTube à côté du nom de la boîte. |
-| L'exemple des garde-fous illustré par "c'est quoi le national-socialisme, quelle est la différence avec l'extrême droite" | ~16:00 | L'exemple est pertinent, la section de commentaires ne le sera pas. Un exemple équivalent et moins inflammable ferait le même travail pédagogique. |
-| "Je fais ça un peu à l'arrache, j'improvise, ce n'est pas vraiment préparé" | 00:05 | Tu t'excuses avant d'avoir commencé. Le contenu est bon, l'excuse le déprécie et donne au spectateur une raison de partir dans les dix premières secondes. Candidate au montage. |
+| Passage                                                                                                                      | Horodatage | Le problème                                                                                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| "Ce qui serait cool, c'est de faire un monthly call, une date bien précise, chacun vient et dit j'ai essayé ça"           | ~07:20     | La vidéo s'adresse à un groupe identifié, pas à un public. Sur une chaîne ouverte, l'invitation devient une promesse à des inconnus. Soit tu la coupes, soit tu l'assumes et tu ouvres vraiment le call. |
+| "Les forces du mal, donc c'est xAI, c'est Elon Musk"                                                                         | ~15:45     | Une pique. Drôle en interne, moins quand elle est indexée par la recherche YouTube à côté du nom de la boîte.                                                                                            |
+| L'exemple des garde-fous illustré par "c'est quoi le national-socialisme, quelle est la différence avec l'extrême droite" | ~16:00     | L'exemple est pertinent, la section de commentaires ne le sera pas. Un exemple équivalent et moins inflammable ferait le même travail pédagogique.                                                          |
+| "Je fais ça un peu à l'arrache, j'improvise, ce n'est pas vraiment préparé"                                              | 00:05      | Tu t'excuses avant d'avoir commencé. Le contenu est bon, l'excuse le déprécie et donne au spectateur une raison de partir dans les dix premières secondes. Candidate au montage.                           |
 
 Décision recommandée : mettre la vidéo courte en public (rien à arbitrer dedans) et garder la
 longue en **non répertoriée** le temps de trancher ces quatre points. Le lien non répertorié

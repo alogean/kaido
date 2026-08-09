@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#F4EFE6"/>
+  <text x="400" y="370" text-anchor="middle" font-family="Futura" font-size="215" font-weight="600" letter-spacing="3">
+    <tspan fill="#1A1A1A">K</tspan><tspan fill="#9E2B25">ai</tspan>
+  </text>
+  <line x1="235" y1="425" x2="565" y2="425" stroke="#1A1A1A" stroke-width="6"/>
+  <text x="400" y="620" text-anchor="middle" font-family="Futura" font-size="215" font-weight="600" letter-spacing="3" fill="#1A1A1A">DO</text>
+</svg>
