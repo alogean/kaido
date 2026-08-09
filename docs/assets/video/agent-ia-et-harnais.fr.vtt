@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00.000 --> 00:06.500
+Ok, alors ici, je vais juste
+vous expliquer à nouveau la
+
+00:06.500 --> 00:13.040
+différence entre un agent et un
+chatbot et le concept de harnais.
+
+00:13.040 --> 00:20.040
+Alors, on peut dire en fait
+que l'agent IA, c'est égal au
+
+00:25.300 --> 00:32.300
+comportement et le harnais,
+c'est égal à l'infrastructure.
+
+00:42.080 --> 00:49.080
+Donc, on va avoir pour l'agent
+IA, il y aura évidemment un LLM
+
+01:04.790 --> 01:11.120
+au milieu et il y a vraiment
+
+01:11.120 --> 01:16.550
+une fonction en boucle. Donc,
+en gros, j'arrive avec un
+
+01:16.550 --> 01:19.120
+objectif, je donne à l'agent un objectif,
+
+01:19.120 --> 01:26.120
+un objectif. Donc, lui, il va
+raisonner. Alors évidemment, en
+
+01:27.280 --> 01:34.230
+utilisant le LLM, il va donc
+décider d'une suite d'actions à
+
+01:34.230 --> 01:40.160
+faire. Il va faire ses actions. Alors pour
+ça, il va utiliser évidemment des outils.
+
+01:40.160 --> 01:43.210
+Donc, il va faire des outils.
+Donc, il va peut-être faire une
+
+01:43.210 --> 01:47.510
+recherche sur Internet. Après,
+il va, je ne sais pas moi,
+
+01:47.510 --> 01:54.510
+combiner des résultats. Et au
+final, il va produire un fichier
+
+01:55.070 --> 01:56.160
+Excel.
+
+02:02.160 --> 02:05.390
+Et en fait, ce qu'il faut bien
+se rendre compte, c'est qu'avec
+
+02:05.390 --> 02:08.890
+Claude Code, par exemple, Claude Code,
+c'est vraiment le harnais
+
+02:08.890 --> 02:13.030
+autour de Claude. Il a une très
+grande agentivité, c'est-à-dire
+
+02:13.030 --> 02:17.070
+qu'il va vraiment prendre des
+initiatives. Pour résoudre le
+
+02:17.070 --> 02:21.160
+problème que tu lui donnes,
+il va vraiment donc raisonner,
+
+02:21.160 --> 02:25.960
+faire une liste de tâches. Après,
+il va exécuter ses tâches en boucle.
+
+02:26.160 --> 02:29.270
+Si ça ne va pas, il change la
+liste et il recommence jusqu'à
+
+02:29.270 --> 02:31.160
+ce qu'il a atteint l'objectif.
+
+02:32.160 --> 02:38.310
+Voilà. Donc, ça, c'est ce
+qu'on appelle, on va dire, un
+
+02:38.310 --> 02:40.160
+comportement agentique.
+
+02:40.160 --> 02:46.160
+Avec Q, peut-être, je ne sais pas.
+
+02:48.160 --> 02:52.840
+Et pour rendre ça possible, on
+a ce qu'on appelle un harnais,
+
+02:52.840 --> 02:55.160
+une infrastructure, et c'est Claude Code.
+
+03:04.160 --> 03:07.160
+Voilà ce que je voulais dire.
+
+03:08.160 --> 03:12.160
+Donc, en résumé, on a un agent
+IA, c'est le système complet
+
+03:12.160 --> 03:14.160
+ou le comportement autonome.
+
+03:15.160 --> 03:17.170
+Et le harnais, c'est les composantes
+logicielles qui permettent
+
+03:17.170 --> 03:19.160
+cette orchestration,
+on va dire ça comme ça.
+
+03:20.160 --> 03:22.660
+Voilà. Maintenant, ce qu'il faut
+peut-être savoir, c'est qu'il
+
+03:22.660 --> 03:24.160
+y a plein de harnais différents.
+
+03:25.160 --> 03:27.760
+Alors, je ne sais pas, ce n'est
+pas une vue exhaustive, mais
+
+03:27.760 --> 03:29.160
+ça vous donne un peu une idée.
+
+03:29.160 --> 03:30.160
+Il y a...
+
+03:31.160 --> 03:34.160
+Alors, pour chez OpenAI, c'est Codex.
+
+03:36.160 --> 03:40.160
+Chez Anthropic, c'est Claude Code.
+
+03:42.160 --> 03:46.160
+Chez Gemini, chez Google, c'est...
+
+03:48.160 --> 03:50.160
+Je crois que c'est Gemini.
+
+03:51.160 --> 03:52.160
+Gemini CLI.
+
+03:52.160 --> 03:54.160
+Mais bon, je ne l'ai jamais
+utilisé, mais bon, bref.
+
+03:55.160 --> 03:59.160
+Eux, ils ont aussi, en fait, ce
+qu'ils appellent Antigravity.
+
+04:00.160 --> 04:01.160
+Antigravity.
+
+04:02.160 --> 04:08.160
+C'est, en fait, l'idée qu'ils
+utilisent autour de Gemini.
+
+04:09.160 --> 04:12.160
+Après, il y a tout plein
+de harnais open source.
+
+04:12.160 --> 04:14.160
+Vous en avez peut-être entendu parler.
+
+04:15.160 --> 04:16.160
+Hyper puissant.
+
+04:17.160 --> 04:21.160
+Donc, OpenClaw.
+
+04:22.160 --> 04:24.160
+Il y a aussi maintenant Hermès.
+
+04:27.160 --> 04:29.720
+Après, il y a tout plein de
+gens qui ont construit leur
+
+04:29.720 --> 04:32.160
+propre harnais autour du LLM, si on veut.
+
+04:33.160 --> 04:36.160
+Ok, ça, c'est ce que je
+voulais dire pour les harnais.
+
+04:37.160 --> 04:40.160
+Voilà, ce sera une vidéo un peu
+plus courte, et c'est tant mieux.
