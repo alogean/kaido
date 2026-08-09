@@ -75,3 +75,14 @@
   width: 100%;
   height: auto;
 }
+
+/* Video player */
+.kaido-video {
+  display: block;
+  width: 100%;
+  max-width: 860px;
+  margin: 1.25rem auto 0.5rem;
+  height: auto;
+  background: #000;
+  border-radius: 12px;
+}
