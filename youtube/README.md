@@ -1,10 +1,12 @@
 # Chaîne YouTube KaiDO , dossier de lancement
 
-État : visuels prêts, chaîne pas encore créée. Les deux vidéos sont pour l'instant auto-hébergées sur [https://alogean.github.io/kaido/videos/](https://alogean.github.io/kaido/videos/).
+État : **chaîne créée** , [https://www.youtube.com/@KaiDO-m2](https://www.youtube.com/@KaiDO-m2). Visuels prêts à téléverser, aucune vidéo en ligne. Les deux vidéos restent auto-hébergées sur [https://alogean.github.io/kaido/videos/](https://alogean.github.io/kaido/videos/).
 
-Ce que je ne peux pas faire à ta place : créer la chaîne, l'authentifier, uploader. Tout ce qui suit est prêt à copier-coller.
+Ce que je ne peux pas faire à ta place : authentifier la chaîne, téléverser, publier. Tout ce qui suit est prêt à copier-coller.
 
 **Décisions arrêtées :** compte de marque, nom `KaiDO`, avatar monogramme, vidéo courte publique au lancement, vidéo longue **non répertoriée** en attendant l'arbitrage du §7.
+
+**Point ouvert : le handle.** `-m2` est le suffixe que YouTube ajoute automatiquement quand aucun handle n'est choisi à la création. Il se lit comme un identifiant technique et il apparaîtra dans chaque lien partagé. Modifiable dans Studio → Personnalisation → Informations de base, deux fois par 14 jours. À trancher maintenant, tant qu'aucun lien n'est diffusé : `@kaido-learning`, `@kaidolearning`, ou le garder si le `m2` est délibéré.
 
 ---
 
@@ -14,7 +16,7 @@ Ce que je ne peux pas faire à ta place : créer la chaîne, l'authentifier, upl
 | --------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chaîne personnelle ou compte de marque | **Compte de marque** ("Brand Account")             | Détachable de ton compte Gmail perso, transférable, plusieurs gestionnaires. Changer après coup est pénible.                                                      |
 | Nom                                     | **KaiDO**                                          | Cohérent avec le dépôt et le site.                                                                                                                                 |
-| Handle                                  | `@kaido-learning` ou `@kaidolearning`                | `@kaido` est certainement pris. À vérifier au moment de la création.                                                                                             |
+| Handle                                  | `@KaiDO-m2` (attribué d'office)                    | Suffixe automatique faute de choix à la création. Encore modifiable, voir l'en-tête.                                                                              |
 | Langue                                  | Français pour les vidéos, métadonnées bilingues      | Les vidéos sont en français. Le site est en anglais. Assume les deux plutôt que de faire semblant.                                                                 |
 | Visibilité au lancement                | **Non répertoriée** pour les deux, puis publique | Tu vérifies l'encodage, les chapitres et les sous-titres avant que quiconque tombe dessus.                                                                           |
 | Auto-hébergement gardé ?              | Oui, au moins un temps                                   | La page`docs/videos.md` marche déjà. Si tu bascules sur YouTube, remplace les balises `<video>` par des iframes et supprime les `.mp4` du dépôt (voir §6). |
@@ -77,8 +79,8 @@ rsvg-convert -w 1280 -h 720 youtube/src/thumb-2.svg -o youtube/thumb-2-agent-har
 
 ## 3. Checklist de création (à faire par toi, environ 15 minutes)
 
-1. youtube.com → créer une chaîne → **Utiliser un nom personnalisé** (crée le compte de marque).
-2. Nom `KaiDO`, réclamer le handle.
+1. ~~youtube.com → créer une chaîne → **Utiliser un nom personnalisé** (crée le compte de marque).~~ **Fait.**
+2. ~~Nom `KaiDO`~~ **fait.** Handle : `@KaiDO-m2`, à confirmer ou à changer avant de diffuser le moindre lien.
 3. YouTube Studio → Personnalisation → avatar, bannière, description, liens (site, GitHub).
 4. Paramètres → Chaîne → **Paramètres avancés** : déclarer "Non, ce ne sont pas des vidéos destinées aux enfants" au niveau de la chaîne.
 5. Paramètres → Importations par défaut : visibilité **Non répertoriée**, langue **Français**, licence YouTube standard, commentaires **avec approbation** (une chaîne éducative attire les donneurs de leçons).
