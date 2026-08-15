@@ -8,114 +8,114 @@
 
   <rect x="1" y="1" width="890" height="806" rx="16" fill="#F4EFE6" stroke="#1A1A1A" stroke-opacity="0.10"/>
 
-  <text x="446" y="48" text-anchor="middle" font-family="Futura, 'Century Gothic', 'Trebuchet MS', sans-serif" font-size="24" font-weight="700" fill="#1A1A1A">Learning Science , Domain Map</text>
-  <text x="446" y="74" text-anchor="middle" font-size="13" fill="#6B645B">Click a domain to open its concept</text>
+  <text x="446" y="48" text-anchor="middle" font-family="Futura, 'Century Gothic', 'Trebuchet MS', sans-serif" font-size="24" font-weight="700" fill="#1A1A1A">Sciences de l'apprentissage , carte des domaines</text>
+  <text x="446" y="74" text-anchor="middle" font-size="13" fill="#6B645B">Cliquez un domaine pour ouvrir son concept</text>
 
-  <text x="230" y="112" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#9E2B25">STUDENT JOURNEY</text>
-  <text x="662" y="112" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#9E2B25">LECTURER JOURNEY</text>
+  <text x="230" y="112" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#9E2B25">PARCOURS &#201;TUDIANT</text>
+  <text x="662" y="112" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="2" fill="#9E2B25">PARCOURS ENSEIGNANT</text>
 
   <line x1="420" y1="265" x2="472" y2="265" stroke="#9E2B25" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <text x="446" y="259" text-anchor="middle" font-size="9" fill="#9E2B25">shared</text>
+  <text x="446" y="259" text-anchor="middle" font-size="9" fill="#9E2B25">partag&#233;</text>
 
   <!-- ===== STUDENT COLUMN ===== -->
-  <a xlink:href="../learning_science_concepts/#41-self-regulation-goal-setting-zimmerman-2000" href="../learning_science_concepts/#41-self-regulation-goal-setting-zimmerman-2000" target="_top">
+  <a xlink:href="../methode/concepts/#41-autoregulation-fixation-dobjectifs-zimmerman-2000" href="../methode/concepts/#41-autoregulation-fixation-dobjectifs-zimmerman-2000" target="_top">
     <rect x="40" y="140" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="58" cy="179" r="5" fill="#9E2B25"/>
-    <text x="76" y="171" font-size="16"><tspan fill="#9E2B25" font-weight="700">S1</tspan><tspan fill="#1A1A1A" font-weight="600">  Orientation &amp; Planning</tspan></text>
-    <text x="76" y="194" font-size="13" fill="#6B645B">Self-Regulation / Goal-Setting (Zimmerman)</text>
+    <text x="76" y="171" font-size="16"><tspan fill="#9E2B25" font-weight="700">S1</tspan><tspan fill="#1A1A1A" font-weight="600">  Orientation et planification</tspan></text>
+    <text x="76" y="194" font-size="13" fill="#6B645B">Autor&#233;gulation / objectifs (Zimmerman)</text>
   </a>
 
-  <a xlink:href="../cognitive_load_theory/" href="../cognitive_load_theory/" target="_top">
+  <a xlink:href="../methode/charge-cognitive/" href="../methode/charge-cognitive/" target="_top">
     <rect x="40" y="226" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="58" cy="265" r="5" fill="#9E2B25"/>
-    <text x="76" y="257" font-size="16"><tspan fill="#9E2B25" font-weight="700">S2</tspan><tspan fill="#1A1A1A" font-weight="600">  Knowledge Acquisition</tspan></text>
-    <text x="76" y="280" font-size="13" fill="#6B645B">Cognitive Load (Sweller) &#183; Dual Coding (Paivio)</text>
+    <text x="76" y="257" font-size="16"><tspan fill="#9E2B25" font-weight="700">S2</tspan><tspan fill="#1A1A1A" font-weight="600">  Acquisition de connaissances</tspan></text>
+    <text x="76" y="280" font-size="13" fill="#6B645B">Charge cognitive (Sweller) &#183; Double codage (Paivio)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#44-icap-framework-chi-2014" href="../learning_science_concepts/#44-icap-framework-chi-2014" target="_top">
+  <a xlink:href="../methode/concepts/#44-cadre-icap-chi-2014" href="../methode/concepts/#44-cadre-icap-chi-2014" target="_top">
     <rect x="40" y="312" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="58" cy="351" r="5" fill="#9E2B25"/>
-    <text x="76" y="343" font-size="16"><tspan fill="#9E2B25" font-weight="700">S3</tspan><tspan fill="#1A1A1A" font-weight="600">  Active Practice &amp; Skill Building</tspan></text>
-    <text x="76" y="366" font-size="13" fill="#6B645B">ICAP-C &#183; Cognitive Apprenticeship (Collins)</text>
+    <text x="76" y="343" font-size="16"><tspan fill="#9E2B25" font-weight="700">S3</tspan><tspan fill="#1A1A1A" font-weight="600">  Pratique active et comp&#233;tences</tspan></text>
+    <text x="76" y="366" font-size="13" fill="#6B645B">ICAP-C &#183; Apprentissage cognitif (Collins)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#44-icap-framework-chi-2014" href="../learning_science_concepts/#44-icap-framework-chi-2014" target="_top">
+  <a xlink:href="../methode/concepts/#44-cadre-icap-chi-2014" href="../methode/concepts/#44-cadre-icap-chi-2014" target="_top">
     <rect x="40" y="398" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="58" cy="437" r="5" fill="#9E2B25"/>
-    <text x="76" y="429" font-size="16"><tspan fill="#9E2B25" font-weight="700">S4</tspan><tspan fill="#1A1A1A" font-weight="600">  Collaboration &amp; Peer Learning</tspan></text>
-    <text x="76" y="452" font-size="13" fill="#6B645B">ICAP-I &#183; Social Constructivism (Vygotsky)</text>
+    <text x="76" y="429" font-size="16"><tspan fill="#9E2B25" font-weight="700">S4</tspan><tspan fill="#1A1A1A" font-weight="600">  Collaboration et pairs</tspan></text>
+    <text x="76" y="452" font-size="13" fill="#6B645B">ICAP-I &#183; Constructivisme social (Vygotsky)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#47-formative-assessment-black-wiliam-1998" href="../learning_science_concepts/#47-formative-assessment-black-wiliam-1998" target="_top">
+  <a xlink:href="../methode/concepts/#47-evaluation-formative-black-wiliam-1998" href="../methode/concepts/#47-evaluation-formative-black-wiliam-1998" target="_top">
     <rect x="40" y="484" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="58" cy="523" r="5" fill="#9E2B25"/>
-    <text x="76" y="515" font-size="16"><tspan fill="#9E2B25" font-weight="700">S5</tspan><tspan fill="#1A1A1A" font-weight="600">  Assessment &amp; Self-Diagnosis</tspan></text>
-    <text x="76" y="538" font-size="13" fill="#6B645B">Formative Assessment (Black &amp; Wiliam)</text>
+    <text x="76" y="515" font-size="16"><tspan fill="#9E2B25" font-weight="700">S5</tspan><tspan fill="#1A1A1A" font-weight="600">  &#201;valuation et autodiagnostic</tspan></text>
+    <text x="76" y="538" font-size="13" fill="#6B645B">&#201;valuation formative (Black et Wiliam)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#48-metacognitive-monitoring-flavell-1979" href="../learning_science_concepts/#48-metacognitive-monitoring-flavell-1979" target="_top">
+  <a xlink:href="../methode/concepts/#48-controle-metacognitif-flavell-1979" href="../methode/concepts/#48-controle-metacognitif-flavell-1979" target="_top">
     <rect x="40" y="570" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="58" cy="609" r="5" fill="#9E2B25"/>
-    <text x="76" y="601" font-size="16"><tspan fill="#9E2B25" font-weight="700">S6</tspan><tspan fill="#1A1A1A" font-weight="600">  Reflection &amp; Metacognition</tspan></text>
-    <text x="76" y="624" font-size="13" fill="#6B645B">Metacognitive Monitoring (Flavell)</text>
+    <text x="76" y="601" font-size="16"><tspan fill="#9E2B25" font-weight="700">S6</tspan><tspan fill="#1A1A1A" font-weight="600">  R&#233;flexion et m&#233;tacognition</tspan></text>
+    <text x="76" y="624" font-size="13" fill="#6B645B">Contr&#244;le m&#233;tacognitif (Flavell)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#49-self-determination-theory-deci-ryan-1985" href="../learning_science_concepts/#49-self-determination-theory-deci-ryan-1985" target="_top">
+  <a xlink:href="../methode/concepts/#49-theorie-de-lautodetermination-deci-ryan-1985" href="../methode/concepts/#49-theorie-de-lautodetermination-deci-ryan-1985" target="_top">
     <rect x="40" y="656" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="58" cy="695" r="5" fill="#9E2B25"/>
-    <text x="76" y="687" font-size="16"><tspan fill="#9E2B25" font-weight="700">S7</tspan><tspan fill="#1A1A1A" font-weight="600">  Wellbeing &amp; Motivation</tspan></text>
-    <text x="76" y="710" font-size="13" fill="#6B645B">Self-Determination Theory (Deci &amp; Ryan)</text>
+    <text x="76" y="687" font-size="16"><tspan fill="#9E2B25" font-weight="700">S7</tspan><tspan fill="#1A1A1A" font-weight="600">  Bien-&#234;tre et motivation</tspan></text>
+    <text x="76" y="710" font-size="13" fill="#6B645B">Autod&#233;termination (Deci et Ryan)</text>
   </a>
 
   <!-- ===== LECTURER COLUMN ===== -->
-  <a xlink:href="../learning_science_concepts/#410-constructive-alignment-biggs-1996" href="../learning_science_concepts/#410-constructive-alignment-biggs-1996" target="_top">
+  <a xlink:href="../methode/concepts/#410-alignement-constructif-biggs-1996" href="../methode/concepts/#410-alignement-constructif-biggs-1996" target="_top">
     <rect x="472" y="140" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="490" cy="179" r="5" fill="#9E2B25"/>
-    <text x="508" y="171" font-size="16"><tspan fill="#9E2B25" font-weight="700">T1</tspan><tspan fill="#1A1A1A" font-weight="600">  Course Design</tspan></text>
-    <text x="508" y="194" font-size="13" fill="#6B645B">Constructive Alignment (Biggs)</text>
+    <text x="508" y="171" font-size="16"><tspan fill="#9E2B25" font-weight="700">T1</tspan><tspan fill="#1A1A1A" font-weight="600">  Conception du cours</tspan></text>
+    <text x="508" y="194" font-size="13" fill="#6B645B">Alignement constructif (Biggs)</text>
   </a>
 
-  <a xlink:href="../cognitive_load_theory/" href="../cognitive_load_theory/" target="_top">
+  <a xlink:href="../methode/charge-cognitive/" href="../methode/charge-cognitive/" target="_top">
     <rect x="472" y="226" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="490" cy="265" r="5" fill="#9E2B25"/>
-    <text x="508" y="257" font-size="16"><tspan fill="#9E2B25" font-weight="700">T2</tspan><tspan fill="#1A1A1A" font-weight="600">  Content Creation &amp; Curation</tspan></text>
-    <text x="508" y="280" font-size="13" fill="#6B645B">Cognitive Load (Sweller)</text>
+    <text x="508" y="257" font-size="16"><tspan fill="#9E2B25" font-weight="700">T2</tspan><tspan fill="#1A1A1A" font-weight="600">  Cr&#233;ation et s&#233;lection de contenus</tspan></text>
+    <text x="508" y="280" font-size="13" fill="#6B645B">Charge cognitive (Sweller)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#411-active-learning-freeman-et-al-2014" href="../learning_science_concepts/#411-active-learning-freeman-et-al-2014" target="_top">
+  <a xlink:href="../methode/concepts/#411-apprentissage-actif-freeman-et-al-2014" href="../methode/concepts/#411-apprentissage-actif-freeman-et-al-2014" target="_top">
     <rect x="472" y="312" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="490" cy="351" r="5" fill="#9E2B25"/>
-    <text x="508" y="343" font-size="16"><tspan fill="#9E2B25" font-weight="700">T3</tspan><tspan fill="#1A1A1A" font-weight="600">  In-Class Facilitation</tspan></text>
-    <text x="508" y="366" font-size="13" fill="#6B645B">Active Learning (Freeman et al.)</text>
+    <text x="508" y="343" font-size="16"><tspan fill="#9E2B25" font-weight="700">T3</tspan><tspan fill="#1A1A1A" font-weight="600">  Animation en classe</tspan></text>
+    <text x="508" y="366" font-size="13" fill="#6B645B">Apprentissage actif (Freeman et al.)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#412-five-phases-of-assessment" href="../learning_science_concepts/#412-five-phases-of-assessment" target="_top">
+  <a xlink:href="../methode/concepts/#412-les-cinq-phases-de-levaluation" href="../methode/concepts/#412-les-cinq-phases-de-levaluation" target="_top">
     <rect x="472" y="398" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="490" cy="437" r="5" fill="#9E2B25"/>
-    <text x="508" y="429" font-size="16"><tspan fill="#9E2B25" font-weight="700">T4</tspan><tspan fill="#1A1A1A" font-weight="600">  Assessment Design</tspan></text>
-    <text x="508" y="452" font-size="13" fill="#6B645B">Five Phases of Assessment</text>
+    <text x="508" y="429" font-size="16"><tspan fill="#9E2B25" font-weight="700">T4</tspan><tspan fill="#1A1A1A" font-weight="600">  Conception de l'&#233;valuation</tspan></text>
+    <text x="508" y="452" font-size="13" fill="#6B645B">Les cinq phases de l'&#233;valuation</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#413-effective-feedback-hattie-timperley-2007" href="../learning_science_concepts/#413-effective-feedback-hattie-timperley-2007" target="_top">
+  <a xlink:href="../methode/concepts/#413-retroaction-efficace-hattie-timperley-2007" href="../methode/concepts/#413-retroaction-efficace-hattie-timperley-2007" target="_top">
     <rect x="472" y="484" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="490" cy="523" r="5" fill="#9E2B25"/>
-    <text x="508" y="515" font-size="16"><tspan fill="#9E2B25" font-weight="700">T5</tspan><tspan fill="#1A1A1A" font-weight="600">  Grading &amp; Feedback</tspan></text>
-    <text x="508" y="538" font-size="13" fill="#6B645B">Effective Feedback (Hattie &amp; Timperley)</text>
+    <text x="508" y="515" font-size="16"><tspan fill="#9E2B25" font-weight="700">T5</tspan><tspan fill="#1A1A1A" font-weight="600">  Notation et r&#233;troaction</tspan></text>
+    <text x="508" y="538" font-size="13" fill="#6B645B">R&#233;troaction efficace (Hattie et Timperley)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#414-reflective-practice-schon-1983" href="../learning_science_concepts/#414-reflective-practice-schon-1983" target="_top">
+  <a xlink:href="../methode/concepts/#414-pratique-reflexive-schon-1983" href="../methode/concepts/#414-pratique-reflexive-schon-1983" target="_top">
     <rect x="472" y="570" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="490" cy="609" r="5" fill="#9E2B25"/>
-    <text x="508" y="601" font-size="16"><tspan fill="#9E2B25" font-weight="700">T6</tspan><tspan fill="#1A1A1A" font-weight="600">  Course Evaluation &amp; Improvement</tspan></text>
-    <text x="508" y="624" font-size="13" fill="#6B645B">Reflective Practice (Sch&#246;n)</text>
+    <text x="508" y="601" font-size="16"><tspan fill="#9E2B25" font-weight="700">T6</tspan><tspan fill="#1A1A1A" font-weight="600">  &#201;valuation et am&#233;lioration du cours</tspan></text>
+    <text x="508" y="624" font-size="13" fill="#6B645B">Pratique r&#233;flexive (Sch&#246;n)</text>
   </a>
 
-  <a xlink:href="../learning_science_concepts/#415-communities-of-practice-wenger-1998" href="../learning_science_concepts/#415-communities-of-practice-wenger-1998" target="_top">
+  <a xlink:href="../methode/concepts/#415-communautes-de-pratique-wenger-1998" href="../methode/concepts/#415-communautes-de-pratique-wenger-1998" target="_top">
     <rect x="472" y="656" width="380" height="78" rx="12" fill="#FCFAF5" stroke="#1A1A1A" stroke-opacity="0.12"/>
     <circle cx="490" cy="695" r="5" fill="#9E2B25"/>
-    <text x="508" y="687" font-size="16"><tspan fill="#9E2B25" font-weight="700">T7</tspan><tspan fill="#1A1A1A" font-weight="600">  Professional Development</tspan></text>
-    <text x="508" y="710" font-size="13" fill="#6B645B">Communities of Practice (Wenger)</text>
+    <text x="508" y="687" font-size="16"><tspan fill="#9E2B25" font-weight="700">T7</tspan><tspan fill="#1A1A1A" font-weight="600">  D&#233;veloppement professionnel</tspan></text>
+    <text x="508" y="710" font-size="13" fill="#6B645B">Communaut&#233;s de pratique (Wenger)</text>
   </a>
 
-  <text x="446" y="770" text-anchor="middle" font-size="11" fill="#6B645B">Red dot = anchoring concept &#183; ICAP-C Constructive, ICAP-I Interactive (Chi) &#183; dashed link = shared anchor (Cognitive Load)</text>
+  <text x="446" y="770" text-anchor="middle" font-size="11" fill="#6B645B">Point rouge = concept d'ancrage &#183; ICAP-C constructif, ICAP-I interactif (Chi) &#183; lien pointill&#233; = ancrage partag&#233; (charge cognitive)</text>
 </svg>

@@ -1,33 +1,70 @@
 ---
-title: Home
+title: Accueil
 ---
 
-![KaiDO , The Art of Learning with AI](assets/kaido-logo.svg){ .kaido-hero }
+![KaiDO , l'art d'apprendre avec l'IA](assets/kaido-logo.svg){ .kaido-hero }
 
-A curated, open knowledge base on learning science and the responsible use of AI for learning.
+Le compagnon écrit de la chaîne [YouTube @KaiDO-learning](https://www.youtube.com/@KaiDO-learning). Les vidéos montrent, ce site documente.
 
-## What this is
+## Le fil rouge
 
-Kaido collects evidence-based learning-science concepts and vetted sources. The goal is to help anyone who designs learning experiences or AI-assisted learning tools, and to reason clearly about when AI helps learning versus when it short-circuits it.
+L'IA peut **amorcer** la construction de vos connaissances ou la **court-circuiter**. Une réponse complète et confiante fait gagner du temps en supprimant exactement l'effort qui produit l'apprentissage. Tout ce qui suit essaie de dire où passe la frontière.
 
-It is deliberately generic and reusable: theory and sources, not product documentation.
+Le parcours se lit dans l'ordre, en trois sections.
 
-## Contents
+<div class="kaido-cards" markdown>
 
-- [Learning Science Concepts](learning_science_concepts.md) , 15 learning-science concepts (cognitive load, ICAP, self-regulation, formative assessment, and more), mapped to a student/lecturer Domain Map (S1:S7 / T1:T7), with relevance notes for AI learning assistants.
-- [Cognitive Load Theory](cognitive_load_theory.md) , a deep-dive content note on Sweller's theory and germane cognitive load: the three load types, the modern revision, and how AI can either prompt or bypass schema-building.
-- [AI in Education , Articles](ai_in_education_articles.md) , curated bibliography of AI-in-education articles and reports, each with a reliability rating.
-- [AI Subscription Plans](ai_subscription_plans.md) , the OpenAI and Anthropic consumer and team tiers side by side, with what each price step actually buys and why none of it buys better learning.
-- [Videos](videos.md) , whiteboard explainers (in French) on how generative AI actually works, and on the difference between an AI agent and its harness.
+<div class="kaido-card" markdown>
 
-## Conventions
+### 1. Installation et outils
 
-- Plain Markdown.
-- **Source reliability key:** 🟢 primary research / authoritative, 🟠 serious journalism / institutional, 🔴 blog / vendor / low-quality journal (cite with caution or avoid).
-- No em dash or en dash anywhere: use ":" or "," instead.
+**Ce que je mets en place.** Installer Claude Code et VS Code, comprendre la ligne de commande et le markdown, puis construire son propre agent : un répertoire, un fichier `CLAUDE.md`, et le contrôle total de ce qui entre dans le contexte.
 
-## How to use and contribute
+Les [cinq vidéos de la chaîne](outils/parcours-video.md) vivent ici, dans l'ordre.
 
-- When making a claim, pull from authoritative sources (🟢) first; treat 🔴 items as examples of what not to cite.
-- Add new material under the right reliability tier, with a date and a one-line "why it matters".
-- Pair claims about AI and learning with the underlying mechanism (cognitive load, retrieval, metacognition) rather than opinion alone.
+[Commencer l'installation](outils/index.md)
+
+</div>
+
+<div class="kaido-card" markdown>
+
+### 2. Bachelor en psychologie
+
+**Ce que je verse dedans.** La convention de répertoire par module, quelles ressources deviennent des sources et lesquelles n'y ont pas leur place, comment l'agent est contraint à répondre depuis vos supports de cours plutôt que depuis sa culture générale.
+
+Un module sert de gabarit reproductible : [M17, psychopathologie](psycho/m17.md).
+
+[Voir la méthode par module](psycho/index.md)
+
+</div>
+
+<div class="kaido-card" markdown>
+
+### 3. Méthodologie d'apprentissage
+
+**Pourquoi ça marche, ou pas.** Les théories qui permettent de trancher : charge cognitive, pratique de récupération, cadre ICAP, métacognition, autorégulation. Plus une bibliographie notée, parce que le domaine "IA et éducation" est saturé de promesses non testées.
+
+[Ouvrir la carte des domaines](methode/index.md)
+
+</div>
+
+</div>
+
+## Dans quel ordre
+
+| Si vous | Allez à |
+|---|---|
+| n'avez encore rien installé | [Installation et outils](outils/index.md), en commençant par les vidéos 1 et 2 |
+| avez Claude Code qui tourne et voulez réviser un module | [Bachelor en psychologie](psycho/index.md) |
+| voulez savoir si votre méthode de révision tient debout | [Méthodologie d'apprentissage](methode/index.md) |
+| doutez qu'une affirmation sur l'IA et l'apprentissage soit sérieuse | [Bibliographie notée](methode/bibliographie.md) |
+
+## Conventions du site
+
+- **Clé de fiabilité des sources :** 🟢 recherche primaire ou source autoritative, 🟠 journalisme sérieux ou institutionnel, 🔴 blog, éditeur de logiciel ou revue faible, à citer avec prudence ou à éviter.
+- Aucune référence n'est inventée. Dans un site sur l'usage responsable de l'IA, une citation fabriquée serait une performance artistique, pas une erreur.
+- Les résultats établis sont distingués des résultats contestés, et l'absence de preuve est dite.
+- Les noms de modèles et les prix cités vieillissent en semaines. Les mécanismes, non.
+- Site en français. La [skill portable](outils/skill-kaido.md) reste en anglais : elle est faite pour être installée dans n'importe quel assistant.
+
+Le dépôt est ouvert : [github.com/alogean/kaido](https://github.com/alogean/kaido).

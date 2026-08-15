@@ -76,13 +76,53 @@
   height: auto;
 }
 
-/* Video player */
-.kaido-video {
-  display: block;
+/* Embedded YouTube player , responsive 16:9 */
+.kaido-embed {
+  position: relative;
   width: 100%;
   max-width: 860px;
   margin: 1.25rem auto 0.5rem;
-  height: auto;
+  aspect-ratio: 16 / 9;
   background: #000;
   border-radius: 12px;
+  overflow: hidden;
+}
+
+.kaido-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Home page section cards */
+.kaido-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.kaido-card {
+  border: 1px solid rgba(26, 26, 26, 0.12);
+  border-left: 3px solid var(--kaido-red);
+  border-radius: 12px;
+  padding: 1rem 1.25rem 1.25rem;
+  background: rgba(26, 26, 26, 0.02);
+}
+
+.kaido-card > h3 {
+  margin-top: 0.4rem;
+}
+
+[data-md-color-scheme="slate"] .kaido-card {
+  border-color: rgba(244, 239, 230, 0.16);
+  border-left-color: #C84B43;
+  background: rgba(244, 239, 230, 0.04);
+}
+
+/* Tables should scroll rather than push the page sideways on mobile */
+.md-typeset__table {
+  width: 100%;
 }

@@ -1,37 +1,54 @@
-# Kaido , The Art of Learning with AI
+# KaiDO , l'art d'apprendre avec l'IA
 
-A curated, open knowledge base on learning science and the responsible use of AI for learning.
+Le compagnon écrit de la chaîne YouTube [@KaiDO-learning](https://www.youtube.com/@KaiDO-learning). Les vidéos montrent, ce dépôt documente.
 
-**Live site:** https://alogean.github.io/kaido/
+**Site publié :** <https://alogean.github.io/kaido/>
 
-## Contents
+Le fil rouge : l'IA peut amorcer la construction des connaissances ou la court-circuiter. Une réponse complète et confiante fait gagner du temps en supprimant exactement l'effort qui produit l'apprentissage. Tout ici essaie de dire où passe la frontière.
 
-The source markdown lives in [`docs/`](docs/):
+## Les trois sections
 
-- [`docs/learning_science_concepts.md`](docs/learning_science_concepts.md) , 15 learning-science concepts mapped to a student/lecturer Domain Map (S1:S7 / T1:T7), with relevance notes for AI learning assistants.
-- [`docs/cognitive_load_theory.md`](docs/cognitive_load_theory.md) , a deep-dive content note on Cognitive Load Theory and germane cognitive load, with an AI-for-learning angle.
-- [`docs/ai_in_education_articles.md`](docs/ai_in_education_articles.md) , curated bibliography of AI-in-education articles and reports with reliability ratings.
+| Section | Question | Source |
+|---|---|---|
+| **1. Installation et outils** | Qu'est-ce que je mets en place ? | [`docs/outils/`](docs/outils/) |
+| **2. Bachelor en psychologie** | Qu'est-ce que je verse dedans ? | [`docs/psycho/`](docs/psycho/) et [`modules/`](modules/) |
+| **3. Méthodologie d'apprentissage** | Pourquoi ça marche, ou pas ? | [`docs/methode/`](docs/methode/) |
 
-## The Kaido skill
+Les cinq vidéos de la chaîne sont intégrées dans [`docs/outils/parcours-video.md`](docs/outils/parcours-video.md).
 
-A portable skill that turns any capable AI assistant into a sound learning companion grounded in this knowledge base:
+## Les modules
 
-- [`skill/kaido/SKILL.md`](skill/kaido/SKILL.md) , the skill file (YAML front matter + Markdown instruction body).
-- [`docs/skill.md`](docs/skill.md) , how to add it to Claude, ChatGPT, or Gemini ([live page](https://alogean.github.io/kaido/skill/)).
+Un sous-répertoire par module dans [`modules/`](modules/), sur le gabarit de [`M17-psychopathologie`](modules/M17-psychopathologie/) : un `CLAUDE.md` qui configure l'agent, un `README.md`, un `.gitignore`.
 
-## Site
+> **Les supports de cours ne montent jamais ici.** Polycopiés, diapositives, articles sous licence et énoncés d'examen appartiennent à leurs auteurs, et ce dépôt est public. Chaque module ignore `data-source/`, `generated-artifacts/` et `memory/`. Ce qui se partage entre étudiants, c'est le `CLAUDE.md`, pas le PDF.
 
-Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and published to GitHub Pages by the `Deploy site` GitHub Actions workflow on every push to `main`.
+## La skill KaiDO
 
-To preview locally:
+Une skill portable qui transforme n'importe quel assistant IA capable en compagnon d'apprentissage correct :
+
+- [`skill/kaido/SKILL.md`](skill/kaido/SKILL.md) , le fichier (en-tête YAML + corps markdown). **En anglais**, pour rester installable partout.
+- [`docs/outils/skill-kaido.md`](docs/outils/skill-kaido.md) , comment l'installer dans Claude, ChatGPT ou Gemini ([page publiée](https://alogean.github.io/kaido/outils/skill-kaido/)).
+
+## Le site
+
+Construit avec [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), publié sur GitHub Pages par le workflow `Deploy site` à chaque push sur `main`.
+
+Aperçu local :
 
 ```bash
 pip install mkdocs-material
 mkdocs serve
 ```
 
+Toute nouvelle page doit être ajoutée à la `nav` de `mkdocs.yml`, sinon elle existe sans exister.
+
 ## Conventions
 
-- Plain Markdown.
-- Source reliability key: 🟢 primary research / authoritative, 🟠 serious journalism / institutional, 🔴 blog / vendor / low-quality journal.
-- No em dash or en dash anywhere: use ":" or "," instead.
+- Markdown simple. Site en français ; la skill portable reste en anglais.
+- Clé de fiabilité des sources : 🟢 recherche primaire ou autoritative, 🟠 journalisme sérieux ou institutionnel, 🔴 blog, éditeur de logiciel ou revue faible.
+- Aucune référence inventée, jamais.
+- **Aucun tiret cadratin ni demi-cadratin nulle part** : utiliser ":" ou ",".
+
+## Archive
+
+[`archive/`](archive/) contient les pages anglaises d'avant la refonte du 15 août 2026. Ce répertoire est hors du site : MkDocs ne construit que `docs/`.
