@@ -24,6 +24,8 @@ theme:
         name: Passer en mode clair
   features:
     - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - navigation.sections
@@ -53,6 +55,7 @@ nav:
       - Concepts: methode/concepts.md
       - Charge cognitive: methode/charge-cognitive.md
       - Apprentissage cognitif: methode/apprentissage-cognitif.md
+      - "Apprendre ou utiliser ?": methode/apprendre-ou-utiliser.md
       - Bibliographie notée: methode/bibliographie.md
 
 markdown_extensions:
@@ -66,6 +69,9 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search:
@@ -73,3 +79,6 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/kaido-sections.js

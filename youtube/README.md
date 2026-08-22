@@ -206,3 +206,11 @@ Le jour où les vidéos sont sur YouTube, dans `docs/videos.md` : remplacer chaq
 **pas de l'historique git**. Le dépôt restera lourd de 55 Mo sauf réécriture d'historique.
 C'est le prix de l'auto-hébergement d'aujourd'hui, et c'est la raison pour laquelle il ne
 faut pas ajouter une troisième vidéo par ce chemin.
+
+---
+
+## 9. Prochaines vidéos
+
+| Sujet | Fiche du site | Angle | État |
+| --- | --- | --- | --- |
+| « Le secret pour maîtriser un sujet, ce n'est pas juste d'apprendre, c'est d'utiliser ce que tu as appris » | [Apprendre ou utiliser ?](../docs/methode/apprendre-ou-utiliser.md) | Un slogan vrai dans sa direction, faux dans sa formulation, incomplet dans ses conditions. Une expérience dessinée (Roediger & Karpicke 2006), l'échelle ICAP, deux réserves, une démonstration avec l'agent. Plan en cinq temps dans la fiche, section 7. | À tourner |

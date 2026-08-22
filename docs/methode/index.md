@@ -18,7 +18,7 @@ Les deux premières sections vous donnent un agent qui travaille sur vos sources
 | Rester sur un type d'exercice jusqu'à l'automatisme | Alterner les types, ce qui donne l'impression d'aller moins vite |
 | Réviser selon son "style d'apprentissage" | Choisir la modalité selon la matière, pas selon soi |
 
-Le fil commun : **la sensation de fluidité n'est pas un indicateur d'apprentissage.** Elle en est souvent l'inverse. Un chapitre qui se relit facilement se relit facilement, c'est tout ce qu'on peut en conclure.
+Le fil commun : **la sensation de fluidité n'est pas un indicateur d'apprentissage.** Elle en est souvent l'inverse. Un chapitre qui se relit facilement se relit facilement, c'est tout ce qu'on peut en conclure. La colonne de droite se résume souvent en un slogan, "il ne suffit pas d'apprendre, il faut utiliser" ; la fiche [Apprendre ou utiliser ?](apprendre-ou-utiliser.md) dit ce qu'il vaut exactement.
 
 C'est aussi ce qui rend l'IA générative si piégeuse pour apprendre : elle produit de la fluidité à volonté.
 
@@ -29,6 +29,7 @@ C'est aussi ce qui rend l'IA générative si piégeuse pour apprendre : elle pro
 | [Concepts](concepts.md) | 15 concepts fondamentaux, chacun rattaché à un domaine du parcours d'apprentissage (S1:S7 étudiant, T1:T7 enseignant), avec la carte cliquable |
 | [Charge cognitive](charge-cognitive.md) | La théorie de Sweller en profondeur : les trois types de charge, la révision moderne, et le mécanisme par lequel l'IA construit ou court-circuite les schémas |
 | [Apprentissage cognitif](apprentissage-cognitif.md) | Les six phases qui rendent visible le raisonnement d'un expert, puis se retirent : modelage, étayage, estompage, articulation, réflexion, exploration |
+| [Apprendre ou utiliser ?](apprendre-ou-utiliser.md) | Un slogan de vidéo de conseils d'étude passé au crible : ce que l'effet de test, ICAP et la charge cognitive en confirment, où il se trompe, et ce que ça change avec un agent |
 | [Bibliographie notée](bibliographie.md) | Les sources sur l'IA et l'éducation, avec une clé de fiabilité, parce que le domaine est saturé de promesses non testées |
 
 ## Le mécanisme central

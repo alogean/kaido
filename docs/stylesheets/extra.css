@@ -1,33 +1,78 @@
-/* KaiDO brand palette */
+/* ============================================================
+   KaiDO , palette de marque et palette par section
+   ------------------------------------------------------------
+   Accueil : crème, encre, rouge de marque.
+   1. Outils  : rouges pastel.
+   2. Psycho  : bleus pastel.
+   3. Méthode : verts pastel.
+   La section courante est posée sur <html data-kaido-section="…">
+   par docs/javascripts/kaido-sections.js.
+   ============================================================ */
+
 :root {
   --kaido-cream: #F4EFE6;
   --kaido-ink: #1A1A1A;
   --kaido-red: #9E2B25;
+
+  /* Couleurs de chaque section, toujours disponibles (onglets, cartes) */
+  --kaido-outils-deep: #9E2B25;
+  --kaido-outils-pale: #F1D3CE;
+  --kaido-outils-tint: rgba(158, 43, 37, 0.08);
+
+  --kaido-psycho-deep: #2F5D8A;
+  --kaido-psycho-pale: #D3E0EE;
+  --kaido-psycho-tint: rgba(47, 93, 138, 0.09);
+
+  --kaido-methode-deep: #2F6B46;
+  --kaido-methode-pale: #D4E6D6;
+  --kaido-methode-tint: rgba(47, 107, 70, 0.09);
+
+  /* Section courante (valeurs par défaut = accueil) */
+  --kaido-sec-deep: var(--kaido-red);
+  --kaido-sec-pale: var(--kaido-cream);
+  --kaido-sec-tint: rgba(26, 26, 26, 0.04);
 }
 
-/* Light scheme , cream page, black header text, red accents */
+html[data-kaido-section="outils"] {
+  --kaido-sec-deep: var(--kaido-outils-deep);
+  --kaido-sec-pale: var(--kaido-outils-pale);
+  --kaido-sec-tint: var(--kaido-outils-tint);
+}
+html[data-kaido-section="psycho"] {
+  --kaido-sec-deep: var(--kaido-psycho-deep);
+  --kaido-sec-pale: var(--kaido-psycho-pale);
+  --kaido-sec-tint: var(--kaido-psycho-tint);
+}
+html[data-kaido-section="methode"] {
+  --kaido-sec-deep: var(--kaido-methode-deep);
+  --kaido-sec-pale: var(--kaido-methode-pale);
+  --kaido-sec-tint: var(--kaido-methode-tint);
+}
+
+/* ---------- Thème clair ---------- */
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: var(--kaido-cream);
+  --md-primary-fg-color: var(--kaido-sec-pale);
   --md-primary-fg-color--light: #FBF8F2;
   --md-primary-fg-color--dark: #E8E1D4;
   --md-primary-bg-color: var(--kaido-ink);
   --md-primary-bg-color--light: rgba(26, 26, 26, 0.7);
 
-  --md-accent-fg-color: var(--kaido-red);
+  --md-accent-fg-color: var(--kaido-sec-deep);
   --md-default-bg-color: var(--kaido-cream);
-  --md-typeset-a-color: var(--kaido-red);
+  --md-typeset-a-color: var(--kaido-sec-deep);
 
   --md-footer-bg-color: var(--kaido-ink);
   --md-footer-bg-color--dark: #111111;
 }
 
-/* Soft separation under the cream header */
 [data-md-color-scheme="default"] .md-header {
   border-bottom: 1px solid rgba(26, 26, 26, 0.08);
   box-shadow: none;
 }
+[data-md-color-scheme="default"] .md-tabs {
+  border-bottom: 1px solid rgba(26, 26, 26, 0.06);
+}
 
-/* Search field readable on cream header */
 [data-md-color-scheme="default"] .md-search__input {
   background-color: rgba(26, 26, 26, 0.06);
 }
@@ -35,20 +80,235 @@
   color: rgba(26, 26, 26, 0.55);
 }
 
-/* Header logo a touch larger */
+/* ---------- Thème sombre ---------- */
+[data-md-color-scheme="slate"] {
+  --kaido-outils-deep: #E08079;
+  --kaido-outils-pale: #3B2624;
+  --kaido-outils-tint: rgba(224, 128, 121, 0.14);
+
+  --kaido-psycho-deep: #8FB4DC;
+  --kaido-psycho-pale: #1F2D3B;
+  --kaido-psycho-tint: rgba(143, 180, 220, 0.14);
+
+  --kaido-methode-deep: #8CC7A0;
+  --kaido-methode-pale: #203328;
+  --kaido-methode-tint: rgba(140, 199, 160, 0.14);
+
+  --md-primary-fg-color: var(--kaido-sec-pale);
+  --md-primary-bg-color: var(--kaido-cream);
+  --md-accent-fg-color: var(--kaido-sec-deep);
+  --md-typeset-a-color: var(--kaido-sec-deep);
+}
+/* Material déclare les couleurs de lien du thème sombre avec deux attributs,
+   il faut la même spécificité pour reprendre la main. */
+[data-md-color-scheme="slate"][data-md-color-primary] {
+  --md-typeset-a-color: var(--kaido-sec-deep);
+  --md-accent-fg-color: var(--kaido-sec-deep);
+}
+/* Logo d'en-tête lisible sur fond sombre */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+  filter: invert(1) hue-rotate(180deg) brightness(1.1);
+}
+/* Les variables de section sont résolues sur <html> ; on les redéfinit donc
+   explicitement sur <body> en sombre, section par section. */
+html[data-kaido-section="accueil"] [data-md-color-scheme="slate"] {
+  --kaido-sec-deep: #E08079;
+  --kaido-sec-pale: var(--kaido-ink);
+  --kaido-sec-tint: rgba(244, 239, 230, 0.05);
+}
+html[data-kaido-section="outils"] [data-md-color-scheme="slate"] {
+  --kaido-sec-deep: #E08079;
+  --kaido-sec-pale: #3B2624;
+  --kaido-sec-tint: rgba(224, 128, 121, 0.14);
+}
+html[data-kaido-section="psycho"] [data-md-color-scheme="slate"] {
+  --kaido-sec-deep: #8FB4DC;
+  --kaido-sec-pale: #1F2D3B;
+  --kaido-sec-tint: rgba(143, 180, 220, 0.14);
+}
+html[data-kaido-section="methode"] [data-md-color-scheme="slate"] {
+  --kaido-sec-deep: #8CC7A0;
+  --kaido-sec-pale: #203328;
+  --kaido-sec-tint: rgba(140, 199, 160, 0.14);
+}
+
+/* Transition douce quand on change de section */
+.md-header,
+.md-tabs {
+  transition: background-color 0.25s ease;
+}
+
+/* ---------- Logo ---------- */
 .md-header__button.md-logo img {
   height: 1.6rem;
 }
 
-/* Dark scheme , keep the red accent, lighten for contrast */
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color: var(--kaido-ink);
-  --md-primary-bg-color: var(--kaido-cream);
-  --md-accent-fg-color: #C84B43;
-  --md-typeset-a-color: #E08079;
+/* ---------- Onglets de section ---------- */
+.md-tabs__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  opacity: 0.75;
+}
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+}
+.md-tabs__item[data-kaido-section="outils"] .md-tabs__link { --kaido-tab: var(--kaido-outils-deep); }
+.md-tabs__item[data-kaido-section="psycho"] .md-tabs__link { --kaido-tab: var(--kaido-psycho-deep); }
+.md-tabs__item[data-kaido-section="methode"] .md-tabs__link { --kaido-tab: var(--kaido-methode-deep); }
+
+.md-tabs__item[data-kaido-section] .kaido-icon {
+  color: var(--kaido-tab);
+}
+.md-tabs__item[data-kaido-section] .md-tabs__link--active,
+.md-tabs__item--active[data-kaido-section] .md-tabs__link {
+  box-shadow: inset 0 -3px 0 var(--kaido-tab);
+  opacity: 1;
 }
 
-/* Figures (SVG diagrams) */
+/* ---------- Icône générique ---------- */
+.kaido-icon {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: -0.15em;
+  width: 1.1em;
+  height: 1.1em;
+  flex: 0 0 auto;
+}
+.kaido-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+.md-tabs__link .kaido-icon--tab {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+/* Onglet Accueil : soulignement rouge de marque */
+html[data-kaido-section="accueil"] .md-tabs__item--active .md-tabs__link {
+  box-shadow: inset 0 -3px 0 var(--kaido-red);
+  opacity: 1;
+}
+
+/* ---------- Navigation latérale ---------- */
+.md-nav__item[data-kaido-section="outils"] > .md-nav__link,
+.md-nav__item[data-kaido-section="outils"] > .md-nav__container > .md-nav__link { --kaido-nav: var(--kaido-outils-deep); }
+.md-nav__item[data-kaido-section="psycho"] > .md-nav__link,
+.md-nav__item[data-kaido-section="psycho"] > .md-nav__container > .md-nav__link { --kaido-nav: var(--kaido-psycho-deep); }
+.md-nav__item[data-kaido-section="methode"] > .md-nav__link,
+.md-nav__item[data-kaido-section="methode"] > .md-nav__container > .md-nav__link { --kaido-nav: var(--kaido-methode-deep); }
+
+.md-nav__item[data-kaido-section] .kaido-icon--nav {
+  color: var(--kaido-nav);
+  margin-right: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+}
+.md-nav__item--section[data-kaido-section] > .md-nav__link,
+.md-nav__item--section[data-kaido-section] > .md-nav__container > .md-nav__link,
+.md-nav__item--nested[data-kaido-section] > .md-nav__link,
+.md-nav__item--nested[data-kaido-section] > .md-nav__container > .md-nav__link {
+  display: flex;
+  align-items: center;
+  color: var(--kaido-nav);
+  font-weight: 700;
+}
+.md-nav--primary .md-nav__item .md-nav__link--active {
+  color: var(--kaido-sec-deep);
+  font-weight: 600;
+}
+.md-nav--primary .md-nav__item--active > .md-nav__link:not(.md-nav__link--index) {
+  color: var(--kaido-sec-deep);
+}
+/* Filet coloré le long de la section ouverte */
+.md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item[data-kaido-section] > .md-nav {
+  border-left: 2px solid var(--kaido-sec-tint);
+  margin-left: 0.15rem;
+  padding-left: 0.35rem;
+}
+
+/* ---------- Pastille de section au-dessus du titre ---------- */
+.md-typeset .kaido-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 0.6rem;
+  padding: 0.2rem 0.7rem 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: var(--kaido-sec-tint);
+  color: var(--kaido-sec-deep);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.md-typeset .kaido-chip .kaido-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* ---------- Accents de contenu tirés de la section ---------- */
+.md-typeset h1 {
+  color: var(--kaido-ink);
+}
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--kaido-cream);
+}
+.md-typeset h1::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.2rem;
+  margin-top: 0.6rem;
+  border-radius: 2px;
+  background: var(--kaido-sec-deep);
+}
+.md-typeset h2 {
+  border-bottom: 1px solid var(--kaido-sec-tint);
+  padding-bottom: 0.2rem;
+}
+.md-typeset table:not([class]) th {
+  background-color: var(--kaido-sec-tint);
+}
+.md-typeset blockquote {
+  border-left-color: var(--kaido-sec-deep);
+}
+.md-typeset .headerlink {
+  color: var(--kaido-sec-deep);
+}
+.md-typeset .md-button--primary {
+  background-color: var(--kaido-sec-deep);
+  border-color: var(--kaido-sec-deep);
+}
+/* Les admonitions neutres (note, abstract…) prennent la teinte de section,
+   les admonitions sémantiques (warning, danger, tip) gardent leurs couleurs. */
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract,
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--kaido-sec-deep);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary,
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: var(--kaido-sec-tint);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .abstract > .admonition-title::before,
+.md-typeset .abstract > summary::before,
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+  background-color: var(--kaido-sec-deep);
+}
+
+/* ---------- Figures ---------- */
 .kaido-figure {
   display: block;
   margin: 1.5rem auto;
@@ -57,7 +317,6 @@
   border-radius: 12px;
 }
 
-/* Interactive (clickable) SVG embedded via <object> */
 .kaido-map-object {
   display: block;
   width: 100%;
@@ -67,7 +326,7 @@
   border: 0;
 }
 
-/* Home hero logo */
+/* ---------- Accueil ---------- */
 .kaido-hero {
   display: block;
   margin: 1.5rem auto 2.5rem;
@@ -76,7 +335,7 @@
   height: auto;
 }
 
-/* Embedded YouTube player , responsive 16:9 */
+/* Lecteur YouTube , 16:9 */
 .kaido-embed {
   position: relative;
   width: 100%;
@@ -87,7 +346,6 @@
   border-radius: 12px;
   overflow: hidden;
 }
-
 .kaido-embed iframe {
   position: absolute;
   inset: 0;
@@ -96,7 +354,7 @@
   border: 0;
 }
 
-/* Home page section cards */
+/* Cartes des trois sections */
 .kaido-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -105,24 +363,93 @@
 }
 
 .kaido-card {
+  --kaido-card-deep: var(--kaido-red);
+  --kaido-card-pale: var(--kaido-cream);
+  --kaido-card-tint: rgba(26, 26, 26, 0.03);
+  position: relative;
   border: 1px solid rgba(26, 26, 26, 0.12);
-  border-left: 3px solid var(--kaido-red);
+  border-top: 4px solid var(--kaido-card-deep);
   border-radius: 12px;
   padding: 1rem 1.25rem 1.25rem;
-  background: rgba(26, 26, 26, 0.02);
+  background: linear-gradient(180deg, var(--kaido-card-tint), transparent 45%);
+}
+.kaido-card--outils {
+  --kaido-card-deep: var(--kaido-outils-deep);
+  --kaido-card-pale: var(--kaido-outils-pale);
+  --kaido-card-tint: var(--kaido-outils-tint);
+}
+.kaido-card--psycho {
+  --kaido-card-deep: var(--kaido-psycho-deep);
+  --kaido-card-pale: var(--kaido-psycho-pale);
+  --kaido-card-tint: var(--kaido-psycho-tint);
+}
+.kaido-card--methode {
+  --kaido-card-deep: var(--kaido-methode-deep);
+  --kaido-card-pale: var(--kaido-methode-pale);
+  --kaido-card-tint: var(--kaido-methode-tint);
 }
 
-.kaido-card > h3 {
+.md-typeset .kaido-card > h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   margin-top: 0.4rem;
+  color: var(--kaido-card-deep);
+}
+.md-typeset .kaido-card > h3 .twemoji {
+  display: inline-flex;
+  width: 1.6em;
+  height: 1.6em;
+  padding: 0.25em;
+  border-radius: 8px;
+  background: var(--kaido-card-pale);
+  color: var(--kaido-card-deep);
+}
+[data-md-color-scheme="slate"] .md-typeset .kaido-card > h3 .twemoji {
+  background: var(--kaido-card-tint);
+}
+.md-typeset .kaido-card > h3 .twemoji svg {
+  width: 100%;
+  height: 100%;
+}
+.md-typeset .kaido-card a {
+  color: var(--kaido-card-deep);
+}
+.md-typeset .kaido-card > p:last-child a {
+  font-weight: 700;
+}
+.md-typeset .kaido-card > p:last-child a::after {
+  content: " →";
 }
 
 [data-md-color-scheme="slate"] .kaido-card {
   border-color: rgba(244, 239, 230, 0.16);
-  border-left-color: #C84B43;
-  background: rgba(244, 239, 230, 0.04);
 }
 
-/* Tables should scroll rather than push the page sideways on mobile */
+/* Légende des trois couleurs (accueil) */
+.kaido-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 0.75rem;
+}
+.kaido-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.kaido-legend i {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 3px;
+  display: inline-block;
+}
+.kaido-legend .outils i { background: var(--kaido-outils-pale); border: 2px solid var(--kaido-outils-deep); }
+.kaido-legend .psycho i { background: var(--kaido-psycho-pale); border: 2px solid var(--kaido-psycho-deep); }
+.kaido-legend .methode i { background: var(--kaido-methode-pale); border: 2px solid var(--kaido-methode-deep); }
+
+/* ---------- Tableaux ---------- */
 .md-typeset__table {
   width: 100%;
 }
