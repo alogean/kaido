@@ -3,3 +3,10 @@ site/
 __pycache__/
 .DS_Store
 .obsidian/
+
+# Les modules restent entièrement locaux.
+# Supports de cours, configurations d'agent, mémoires, productions : rien de
+# tout cela ne monte sur ce dépôt public. Cette règle couvre le répertoire
+# entier, et non les seuls sous-dossiers de sources : un .gitignore par module
+# protège moins bien qu'une seule ligne ici.
+modules/

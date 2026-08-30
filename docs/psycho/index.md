@@ -21,14 +21,14 @@ Le modèle connaît la psychologie académique en général. Il ne connaît pas 
 | [Méthode par module](methode-module.md) | La convention de répertoire, quelles ressources verser, lesquelles jamais, et comment vérifier que l'agent s'y tient |
 | [Module M17, psychopathologie](m17.md) | Le gabarit complet, reproductible pour n'importe quel module |
 
-## Sur GitHub
+## Où vivent les modules
 
-Chaque module est un sous-répertoire de [`modules/`](https://github.com/alogean/kaido/tree/main/modules) dans le dépôt. Ce qui est versionné : la configuration de l'agent, la méthode, l'inventaire des sources.
+Chaque module est un répertoire **sur votre disque**, rangé par niveau d'études : `modules/Bachelor/` et `modules/Master/`, un sous-répertoire par module.
 
-!!! danger "Ce qui n'est jamais poussé"
-    **Les supports de cours ne montent pas sur GitHub.** Polycopiés, diapositives, articles sous licence, énoncés d'examen : ils appartiennent à leurs auteurs et le dépôt est public. Chaque module contient un `.gitignore` qui exclut `data-source/` et `generated-artifacts/`, mais un `.gitignore` protège moins bien qu'une habitude. Vérifiez avant de pousser.
+!!! danger "Les modules ne montent pas sur GitHub"
+    Ni les supports, ni les configurations, ni les mémoires. Polycopiés, diapositives, articles sous licence et énoncés d'examen appartiennent à leurs auteurs, et un dépôt public n'est pas l'endroit où les déposer. La règle est volontairement grossière : **le répertoire entier reste local**. Un périmètre simple se respecte, un périmètre subtil s'oublie un soir de révision.
 
-Ce qui se partage utilement entre étudiants, ce n'est pas le PDF du cours : c'est le `CLAUDE.md` qui a bien marché.
+Ce qui se partage utilement entre étudiants, ce n'est de toute façon pas le PDF du cours : c'est le `CLAUDE.md` qui a bien marché. Il tient sur une page, et la [page M17](m17.md) en publie un complet.
 
 ## Le raccourci qui coûte cher
 

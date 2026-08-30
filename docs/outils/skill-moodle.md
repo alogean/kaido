@@ -106,7 +106,7 @@ L'usage correct : aspirer, trier, puis demander à l'agent de **vous interroger*
 Les polycopiés, diapositives, articles et enregistrements appartiennent à leurs auteurs et à l'institution. Ils sont mis à votre disposition pour vos études, pas pour être redistribués.
 
 !!! danger "Ce qui n'est jamais poussé"
-    `data_sources/` est couvert par le `.gitignore` de votre module. Ne le commitez jamais, ne le republiez jamais, ne le partagez pas hors du cadre du cours. Ce qui se partage utilement entre étudiants, c'est le `CLAUDE.md` qui a bien marché, pas le PDF.
+    Ce que la skill télécharge reste sur votre disque. Si vous versionnez votre travail, ignorez `modules/` en entier plutôt que d'y trier fichier par fichier. Ne le commitez jamais, ne le republiez jamais, ne le partagez pas hors du cadre du cours. Ce qui se partage utilement entre étudiants, c'est le `CLAUDE.md` qui a bien marché, pas le PDF.
 
 ## Quand ça coince
 

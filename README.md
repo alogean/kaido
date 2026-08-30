@@ -11,23 +11,23 @@ Le fil rouge : l'IA peut amorcer la construction des connaissances ou la court-c
 | Section | Question | Source |
 |---|---|---|
 | **1. Installation et outils** | Qu'est-ce que je mets en place ? | [`docs/outils/`](docs/outils/) |
-| **2. Bachelor en psychologie** | Qu'est-ce que je verse dedans ? | [`docs/psycho/`](docs/psycho/) et [`modules/`](modules/) |
+| **2. Bachelor en psychologie** | Qu'est-ce que je verse dedans ? | [`docs/psycho/`](docs/psycho/), et `modules/` en local |
 | **3. Méthodologie d'apprentissage** | Pourquoi ça marche, ou pas ? | [`docs/methode/`](docs/methode/) |
 
 Les cinq vidéos de la chaîne sont intégrées dans [`docs/outils/parcours-video.md`](docs/outils/parcours-video.md).
 
 ## Les modules
 
-`modules/` est découpé par niveau d'études :
+`modules/` est découpé par niveau d'études, un sous-répertoire par module :
 
 | Niveau | Répertoire | Modules |
 |---|---|---|
 | Bachelor | `modules/Bachelor/` | M00 à M18 |
 | Master | `modules/Master/` | MES2, PSY2, SAE6, TOF6 |
 
-Un sous-répertoire par module, sur le gabarit de `Bachelor/M17` : un `CLAUDE.md` qui configure l'agent, un `README.md`, un `.gitignore`.
+> **`modules/` est absent de ce dépôt, et c'est délibéré.** Ni les supports, ni les configurations d'agent, ni les mémoires. Polycopiés, diapositives, articles sous licence et énoncés d'examen appartiennent à leurs auteurs, et ce dépôt est public. Le `.gitignore` racine exclut le répertoire entier : un périmètre grossier se respecte, un périmètre subtil s'oublie.
 
-> **Les supports de cours ne montent jamais ici.** Polycopiés, diapositives, articles sous licence et énoncés d'examen appartiennent à leurs auteurs, et ce dépôt est public. Chaque module ignore `data-source/`, `generated-artifacts/` et `memory/`. Ce qui se partage entre étudiants, c'est le `CLAUDE.md`, pas le PDF.
+Ce qui se partage entre étudiants, ce n'est pas le PDF du cours, c'est le `CLAUDE.md` qui a bien marché. Le gabarit complet est publié sur la page [Module M17](https://alogean.github.io/kaido/psycho/m17/), méthode et tests d'acceptation compris.
 
 ## Les skills
 

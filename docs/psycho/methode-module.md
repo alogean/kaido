@@ -10,20 +10,21 @@ La convention reproductible : un module, un répertoire, un agent. Elle vaut pou
 
 ```text
 modules/Bachelor/M17/
-├── CLAUDE.md              ← la configuration de l'agent (versionné)
-├── README.md              ← ce que couvre le module, comment l'examen est évalué (versionné)
-├── .gitignore             ← exclut les sources et les productions (versionné)
-├── data-source/           ← vos supports de cours (JAMAIS versionné)
-├── generated-artifacts/   ← fiches, quiz, plans (JAMAIS versionné)
-└── memory/                ← progression, erreurs récurrentes (au choix)
+├── CLAUDE.md              ← la configuration de l'agent
+├── README.md              ← ce que couvre le module, comment l'examen est évalué
+├── data-source/           ← vos supports de cours
+├── generated-artifacts/   ← fiches, quiz, plans
+└── memory/                ← progression, erreurs récurrentes
 ```
 
-Un `.gitignore` par module, avec au minimum :
+!!! danger "Ce répertoire reste local"
+    Un module ne se pousse pas sur un dépôt public, ni ses supports, ni sa configuration, ni sa mémoire. Si vous versionnez votre travail, ignorez `modules/` en entier plutôt que d'y trier fichier par fichier :
 
-```gitignore
-data-source/
-generated-artifacts/
-```
+    ```gitignore
+    modules/
+    ```
+
+    Une règle grossière se respecte. Une règle subtile s'oublie un soir de révision, et un polycopié sous droits se retrouve public.
 
 ## Quelles ressources verser
 

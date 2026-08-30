@@ -204,8 +204,9 @@ S3 signée (périmée en 8 h, donc inutile à archiver). Mettre à jour `memory/
 - Ne pas ré-télécharger un fichier déjà présent et identique.
 - Rester dans le périmètre du cours demandé ; ne pas suivre des liens vers d'autres cours sans
   accord explicite.
-- Les supports et vidéos sont sous droits et restent **locaux** : `data_sources/` est couvert
-  par le `.gitignore` du module. Ne jamais les committer ni les republier.
+- Les supports et vidéos sont sous droits et restent **locaux**. Ne jamais les committer ni les
+  republier. Si le dépôt de travail est versionné, `modules/` doit être ignoré en entier :
+  ne jamais proposer de forcer l'ajout d'un fichier aspiré.
 
 ## Inventaire des scripts
 
