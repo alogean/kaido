@@ -21,6 +21,15 @@ L'objectif n'est pas d'avoir un chatbot de plus. C'est d'avoir un **agent** : un
 
 Une fois l'étape 4 franchie, passez au [Bachelor en psychologie](../psycho/index.md) : c'est là que l'agent rencontre vos supports de cours.
 
+## Les deux skills
+
+Hors parcours, deux compléments installables à part :
+
+| Skill | Ce qu'elle fait |
+|---|---|
+| [La skill KaiDO](skill-kaido.md) | Transforme n'importe quel assistant en compagnon d'apprentissage correct : découverte guidée plutôt que réponse offerte |
+| [La skill Moodle](skill-moodle.md) | Télécharge les supports et les vidéos d'un cours UniDistance dans `data_sources/`, sur macOS comme sur Windows |
+
 ## Ce qu'il vous faut
 
 | Élément | Obligatoire | Remarque |

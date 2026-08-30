@@ -18,16 +18,30 @@ Les cinq vidéos de la chaîne sont intégrées dans [`docs/outils/parcours-vide
 
 ## Les modules
 
-Un sous-répertoire par module dans [`modules/`](modules/), sur le gabarit de [`M17-psychopathologie`](modules/M17-psychopathologie/) : un `CLAUDE.md` qui configure l'agent, un `README.md`, un `.gitignore`.
+`modules/` est découpé par niveau d'études :
+
+| Niveau | Répertoire | Modules |
+|---|---|---|
+| Bachelor | `modules/Bachelor/` | M00 à M18 |
+| Master | `modules/Master/` | MES2, PSY2, SAE6, TOF6 |
+
+Un sous-répertoire par module, sur le gabarit de `Bachelor/M17` : un `CLAUDE.md` qui configure l'agent, un `README.md`, un `.gitignore`.
 
 > **Les supports de cours ne montent jamais ici.** Polycopiés, diapositives, articles sous licence et énoncés d'examen appartiennent à leurs auteurs, et ce dépôt est public. Chaque module ignore `data-source/`, `generated-artifacts/` et `memory/`. Ce qui se partage entre étudiants, c'est le `CLAUDE.md`, pas le PDF.
 
-## La skill KaiDO
+## Les skills
 
-Une skill portable qui transforme n'importe quel assistant IA capable en compagnon d'apprentissage correct :
+Deux skills installables, distribuées depuis [`skill/`](skill/).
+
+**KaiDO** , transforme n'importe quel assistant IA capable en compagnon d'apprentissage correct :
 
 - [`skill/kaido/SKILL.md`](skill/kaido/SKILL.md) , le fichier (en-tête YAML + corps markdown). **En anglais**, pour rester installable partout.
 - [`docs/outils/skill-kaido.md`](docs/outils/skill-kaido.md) , comment l'installer dans Claude, ChatGPT ou Gemini ([page publiée](https://alogean.github.io/kaido/outils/skill-kaido/)).
+
+**Moodle** , télécharge les supports et les vidéos d'un cours UniDistance dans `data_sources/` :
+
+- [`skill/moodle-fernuni-scrape/`](skill/moodle-fernuni-scrape/) , un `SKILL.md` et cinq scripts. Pilote Chrome ou Edge par le Chrome DevTools Protocol : macOS, Windows et Linux. Aucune dépendance à installer, la bibliothèque standard de Python suffit.
+- [`docs/outils/skill-moodle.md`](docs/outils/skill-moodle.md) , l'installation et les pièges ([page publiée](https://alogean.github.io/kaido/outils/skill-moodle/)).
 
 ## Le site
 

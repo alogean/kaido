@@ -9,7 +9,7 @@ La convention reproductible : un module, un répertoire, un agent. Elle vaut pou
 ## L'arborescence
 
 ```text
-modules/M17-psychopathologie/
+modules/Bachelor/M17/
 ├── CLAUDE.md              ← la configuration de l'agent (versionné)
 ├── README.md              ← ce que couvre le module, comment l'examen est évalué (versionné)
 ├── .gitignore             ← exclut les sources et les productions (versionné)
@@ -51,6 +51,9 @@ Cette dernière ligne est le piège le plus courant. Une fiche générée qui re
 | Photos de tableau | À éviter | Convertissez ce qui compte en texte |
 
 Nommez les fichiers de façon parlante : `03-troubles-anxieux-polycopie.pdf` vaut mieux que `Cours3_v2_final.pdf`. L'agent utilise les noms pour se repérer, et vous aussi.
+
+!!! tip "Récupérer les supports sans trente clics droits"
+    La [skill Moodle](../outils/skill-moodle.md) télécharge les documents et les vidéos d'un cours UniDistance directement dans `data_sources/`, correctement nommés. Elle ne remplace pas le tri décrit ci-dessus : elle vous donne juste de quoi trier.
 
 ## Les quatre instructions non négociables
 
